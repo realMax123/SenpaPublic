@@ -38,6 +38,32 @@
       }
   }
 
+#huds #emoji_tab_button {
+    position: fixed;
+    bottom: 50px;
+    left: 235px;
+    width: 45px;
+    height: 45px;
+}
+#huds #emoji_tab_list {
+    width: 225px;
+    height: 283px;
+    position: fixed;
+    bottom: 50px;
+    left: 238px;
+    transform-origin: left;
+    background: rgba(10,10,10,.3);
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    grid-auto-rows: 36px;
+}
+.emoji_text:hover {
+    transform: scale(1.3);
+    }
+
+
 
 #account-panel button:hover {
     background: #940000;
