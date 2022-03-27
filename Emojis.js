@@ -1,1 +1,417 @@
-var _0x30ee48=_0x44f5;(function(_0xa7878a,_0x4203f3){var _0x39f1a7=_0x44f5,_0x25dbcc=_0xa7878a();while(!![]){try{var _0x54fbc8=parseInt(_0x39f1a7(0x161))/0x1*(parseInt(_0x39f1a7(0x162))/0x2)+-parseInt(_0x39f1a7(0x18a))/0x3*(-parseInt(_0x39f1a7(0x14d))/0x4)+parseInt(_0x39f1a7(0x177))/0x5+parseInt(_0x39f1a7(0x163))/0x6+-parseInt(_0x39f1a7(0x17e))/0x7*(parseInt(_0x39f1a7(0x184))/0x8)+-parseInt(_0x39f1a7(0x15b))/0x9+-parseInt(_0x39f1a7(0x140))/0xa*(parseInt(_0x39f1a7(0x190))/0xb);if(_0x54fbc8===_0x4203f3)break;else _0x25dbcc['push'](_0x25dbcc['shift']());}catch(_0x5d8892){_0x25dbcc['push'](_0x25dbcc['shift']());}}}(_0x1bbf,0x67547));var kitty=_0x30ee48(0x174),cock=_0x30ee48(0x15f),sad_cat=_0x30ee48(0x15d),doggo_dance=_0x30ee48(0x16f),shaky_shaky=_0x30ee48(0x187),ban_ban='https://emoji.discord.st/emojis/73e3dd54-6b57-46ef-b9de-3ed3914bbd0b.png',joy_abel=_0x30ee48(0x14a),daze_laugh=_0x30ee48(0x166),mad_blob='https://emoji.discord.st/emojis/3c09050d-653c-45e5-836d-8847002dc6dc.gif',flame=_0x30ee48(0x18c),gg='https://emoji.discord.st/emojis/73aa155b-1952-4fed-86e4-22a2950cdb7a.png',clappin_cheeks=_0x30ee48(0x158),dababy=_0x30ee48(0x193),peaceout=_0x30ee48(0x183),wut=_0x30ee48(0x19c),ez=_0x30ee48(0x194),twerk=_0x30ee48(0x153),stare=_0x30ee48(0x191),hakcan=_0x30ee48(0x17f),thonk='https://emoji.discord.st/emojis/thonk.png',awana=_0x30ee48(0x175),clapp='https://emoji.discord.st/emojis/1b454d04-3ba8-425e-b379-3e4a69554970.gif',amongus=_0x30ee48(0x182),vibing=_0x30ee48(0x145),eri=_0x30ee48(0x16a),sheeesh=_0x30ee48(0x167),mcdonalds='https://emoji.discord.st/emojis/c580ab93-b37d-49d7-9fd5-9f8db08fbb34.png',fourK=_0x30ee48(0x14b);setInterval(function(){var _0x3eeeeb=_0x30ee48;try{var _0x4adc2c=document[_0x3eeeeb(0x14f)](_0x3eeeeb(0x141))['lastElementChild']['getElementsByClassName'](_0x3eeeeb(0x176))[0x0]['innerHTML'],_0x1f28e4=document[_0x3eeeeb(0x14f)](_0x3eeeeb(0x178))[_0x3eeeeb(0x179)]['getElementsByClassName']('message')[0x0][_0x3eeeeb(0x18d)],_0x53be4a=_0x3eeeeb(0x141),_0x56a5e2=_0x3eeeeb(0x178);if(_0x4adc2c[_0x3eeeeb(0x199)](':kitty:')){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x17b),_0x3eeeeb(0x147)+kitty+_0x3eeeeb(0x169));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName']('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x17b))){var _0x29fb35=_0x1f28e4['replace'](':kitty:','<img\x20src=\x22'+kitty+_0x3eeeeb(0x169));document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x168))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x168),_0x3eeeeb(0x147)+cock+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':cock:')){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](':cock:',_0x3eeeeb(0x147)+cock+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x164))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x164),_0x3eeeeb(0x147)+sad_cat+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x164))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x164),'<img\x20src=\x22'+sad_cat+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x15c))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x15c),'<img\x20src=\x22'+doggo_dance+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x15c))){var _0x29fb35=_0x1f28e4['replace'](':doggodance:',_0x3eeeeb(0x147)+doggo_dance+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x17d))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x17d),_0x3eeeeb(0x147)+shaky_shaky+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName']('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':shakyshaky:')){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x17d),'<img\x20src=\x22'+shaky_shaky+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x160))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x160),_0x3eeeeb(0x147)+ban_ban+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x160))){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x160),_0x3eeeeb(0x147)+ban_ban+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x151))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':joyabel:','<img\x20src=\x22'+joy_abel+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':joyabel:')){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x151),_0x3eeeeb(0x147)+joy_abel+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)]['getElementsByClassName']('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](':dazelaugh:')){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x13e),'<img\x20src=\x22'+daze_laugh+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':dazelaugh:')){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](':dazelaugh:','<img\x20src=\x22'+daze_laugh+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c['includes'](_0x3eeeeb(0x15a))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x15a),_0x3eeeeb(0x147)+mad_blob+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x15a))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x15a),'<img\x20src=\x22'+mad_blob+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c['includes'](_0x3eeeeb(0x152))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':flame:',_0x3eeeeb(0x147)+flame+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':flame:')){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x152),_0x3eeeeb(0x147)+flame+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x156))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x156),'<img\x20src=\x22'+gg+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x156))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x156),_0x3eeeeb(0x147)+gg+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x173))){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x173),_0x3eeeeb(0x147)+clappin_cheeks+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x173))){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x173),'<img\x20src=\x22'+clappin_cheeks+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)['lastElementChild']['getElementsByClassName'](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c['includes'](':dababy:')){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':dababy:','<img\x20src=\x22'+dababy+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x185))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](':dababy:',_0x3eeeeb(0x147)+dababy+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x196))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x196),_0x3eeeeb(0x147)+peaceout+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x196))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x196),_0x3eeeeb(0x147)+peaceout+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x186))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':wut:',_0x3eeeeb(0x147)+wut+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x186))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x186),_0x3eeeeb(0x147)+wut+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x195))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':ez:',_0x3eeeeb(0x147)+ez+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)['lastElementChild']['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x195))){var _0x29fb35=_0x1f28e4['replace'](':ez:',_0x3eeeeb(0x147)+ez+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c['includes'](_0x3eeeeb(0x14e))){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x14e),_0x3eeeeb(0x147)+twerk+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x53be4a)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x14e))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](':twerk:','<img\x20src=\x22'+twerk+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](':stare:')){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](':stare:',_0x3eeeeb(0x147)+stare+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x198))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x198),'<img\x20src=\x22'+stare+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c['includes'](':hakcan:')){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x197),_0x3eeeeb(0x147)+hakcan+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](_0x3eeeeb(0x197))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x197),'<img\x20src=\x22'+hakcan+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](':thonk:')){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x144),_0x3eeeeb(0x147)+thonk+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](':thonk:')){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x144),'<img\x20src=\x22'+thonk+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x15e))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x15e),'<img\x20src=\x22'+awana+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x15e))){var _0x29fb35=_0x1f28e4['replace'](':awana:',_0x3eeeeb(0x147)+awana+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](':clapp:')){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x14c),_0x3eeeeb(0x147)+clapp+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x14c))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x14c),_0x3eeeeb(0x147)+clapp+_0x3eeeeb(0x157));document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x19d))){var _0x29fb35=_0x4adc2c['replace'](_0x3eeeeb(0x19d),_0x3eeeeb(0x147)+amongus+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x19d))){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x19d),_0x3eeeeb(0x147)+amongus+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x16e))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x16e),_0x3eeeeb(0x147)+vibing+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x16e))){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x16e),_0x3eeeeb(0x147)+vibing+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x171))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x171),_0x3eeeeb(0x147)+eri+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName']('message')[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x171))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x171),_0x3eeeeb(0x147)+eri+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c['includes'](':sheeesh:')){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x189),_0x3eeeeb(0x147)+sheeesh+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4['includes'](':sheeesh:')){var _0x29fb35=_0x1f28e4['replace'](_0x3eeeeb(0x189),_0x3eeeeb(0x147)+sheeesh+'\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>');document['getElementById'](_0x56a5e2)['lastElementChild'][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x16d))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x16d),_0x3eeeeb(0x147)+mcdonalds+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x16d))){var _0x29fb35=_0x1f28e4[_0x3eeeeb(0x18f)](_0x3eeeeb(0x16d),'<img\x20src=\x22'+mcdonalds+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0]['innerHTML']=_0x29fb35;}}if(_0x4adc2c[_0x3eeeeb(0x199)](_0x3eeeeb(0x150))){var _0x29fb35=_0x4adc2c[_0x3eeeeb(0x18f)](_0x3eeeeb(0x150),_0x3eeeeb(0x147)+fourK+_0x3eeeeb(0x157));document['getElementById'](_0x53be4a)[_0x3eeeeb(0x179)]['getElementsByClassName'](_0x3eeeeb(0x176))[0x0][_0x3eeeeb(0x18d)]=_0x29fb35;}else{if(_0x1f28e4[_0x3eeeeb(0x199)](_0x3eeeeb(0x150))){var _0x29fb35=_0x1f28e4['replace'](':caught4k:',_0x3eeeeb(0x147)+fourK+_0x3eeeeb(0x157));document[_0x3eeeeb(0x14f)](_0x56a5e2)[_0x3eeeeb(0x179)][_0x3eeeeb(0x148)]('message')[0x0]['innerHTML']=_0x29fb35;}}}catch(_0x3738bd){if(_0x3738bd[_0x3eeeeb(0x17a)][_0x3eeeeb(0x180)]()==_0x3eeeeb(0x18b)){}}});const emoji_button=document[_0x30ee48(0x149)](_0x30ee48(0x17c));emoji_button['id']=_0x30ee48(0x154),document[_0x30ee48(0x14f)](_0x30ee48(0x155))[_0x30ee48(0x143)](emoji_button),document[_0x30ee48(0x14f)](_0x30ee48(0x154))[_0x30ee48(0x18d)]='<img\x20class=\x22emoji_button\x22\x20src=\x22https://emoji.gg/assets/emoji/4261-cooldoggo.gif\x22\x20alt=\x22logo\x22\x20width=\x2245\x22\x20height=\x2245\x22>',document[_0x30ee48(0x14f)](_0x30ee48(0x154))[_0x30ee48(0x165)]('click',emoji_list_show);const emoji_list_a=document[_0x30ee48(0x149)](_0x30ee48(0x17c));function _0x1bbf(){var _0x3770cd=['\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>','click','https://emoji.discord.st/emojis/b88a98c3-878d-4007-97df-afeb85c31449.png',':amongus:','\x22width=\x2235\x22\x20height=\x2235\x22></img>',':dazelaugh:','children','474010scuZJX','chat-party-room','writeText','appendChild',':thonk:','https://emoji.discord.st/emojis/a21ddac1-3f6b-47ec-838b-3a330bb2f5ae.gif','466px','<img\x20src=\x22','getElementsByClassName','createElement','https://emoji.discord.st/emojis/JoyRow.gif','https://emoji.gg/assets/emoji/1309-caughtin4k.gif',':clapp:','44wyIByf',':twerk:','getElementById',':caught4k:',':joyabel:',':flame:','https://emoji.discord.st/emojis/ac216976-90ff-4b42-8006-fafdaab6fab1.gif','emoji_tab_button','huds',':gg:','\x22\x20width=\x2220\x22\x20height=\x2220\x22></img>','https://emoji.gg/assets/emoji/1403-assslap.gif','clipboard',':madblob:','1795473pOpKKp',':doggodance:','https://emoji.discord.st/emojis/1685a79a-23f8-4307-9487-a1a5cb59302f.png',':awana:','https://c.tenor.com/9QMTL4kgC5UAAAAC/dead-emoji.gif',':ban:','701425gPoxZA','2rbazuL','1307418cxVrGI',':sadcat:','addEventListener','https://emoji.discord.st/emojis/972d318f-0fd3-4201-827a-bec816a02707.gif','https://emoji.discord.st/emojis/da4e55ab-16e2-494c-b2be-be54d71b841c.png',':cock:','\x22width=\x2220\x22\x20height=\x2220\x22></img>','https://emoji.discord.st/emojis/9b48b483-f8a9-45bd-8bcf-f5b64ed01945.webp','<img\x20class=\x22emoji_text\x22\x20src=\x22','left',':mcdonalds:',':vibing:','https://emoji.discord.st/emojis/d3897e57-3a33-4136-a6bb-882343233261.gif','235px',':eri:','style',':clappincheeks:','https://emoji.gg/assets/emoji/9553-cat-smile.png','https://emoji.discord.st/emojis/c2ad2f8b-9263-4e2e-964a-f42741a33d01.gif','message','2221875EBTqpn','chat-all-room','lastElementChild','name',':kitty:','div',':shakyshaky:','3509093uDsXhn','https://emoji.discord.st/emojis/0dcfa262-39b8-4d96-b7cf-b1926ad8e9cc.gif','toString','display','https://emoji.discord.st/emojis/8c137b4f-d1af-4a61-a3d1-b2709aa50daf.gif','https://emoji.discord.st/emojis/aed6a6c0-9b80-48e5-8170-ee6c1f0a415e.gif','8GsTemP',':dababy:',':wut:','https://cdn.discordapp.com/attachments/931966555976245279/937783980118397008/shakyshaky.gif','grid',':sheeesh:','76839UOLucn','TypeError','https://emoji.discord.st/emojis/78a303da-784c-48ab-b97d-692c14c37347.gif','innerHTML','none','replace','121tOWrLb','https://emoji.discord.st/emojis/74aa6827-fd4b-4ef1-bafd-d224ff8b42fe.png','emoji_tab_list','https://emoji.discord.st/emojis/22e67c14-a37c-4ad3-92f4-721df22e8a06.jpeg','https://emoji.discord.st/emojis/EZ.png',':ez:',':peaceout:',':hakcan:',':stare:','includes'];_0x1bbf=function(){return _0x3770cd;};return _0x1bbf();}emoji_list_a['id']=_0x30ee48(0x192),document[_0x30ee48(0x14f)](_0x30ee48(0x155))['appendChild'](emoji_list_a);function emoji_list_show(){var _0x11180c=_0x30ee48;document[_0x11180c(0x14f)](_0x11180c(0x192))['style'][_0x11180c(0x181)]===_0x11180c(0x18e)?(document['getElementById'](_0x11180c(0x192))[_0x11180c(0x172)][_0x11180c(0x181)]=_0x11180c(0x188),document[_0x11180c(0x14f)]('emoji_tab_button')[_0x11180c(0x172)][_0x11180c(0x16c)]=_0x11180c(0x146)):(document[_0x11180c(0x14f)](_0x11180c(0x192))['style'][_0x11180c(0x181)]=_0x11180c(0x18e),document[_0x11180c(0x14f)]('emoji_tab_button')[_0x11180c(0x172)][_0x11180c(0x16c)]=_0x11180c(0x170));}var emoji_list=document['getElementById'](_0x30ee48(0x192));function _0x44f5(_0x1e3e39,_0x4ecb13){var _0x1bbfb5=_0x1bbf();return _0x44f5=function(_0x44f5d2,_0x5d7939){_0x44f5d2=_0x44f5d2-0x13d;var _0x3d08fd=_0x1bbfb5[_0x44f5d2];return _0x3d08fd;},_0x44f5(_0x1e3e39,_0x4ecb13);}emoji_list['style'][_0x30ee48(0x181)]=_0x30ee48(0x18e),emoji_list[_0x30ee48(0x18d)]=_0x30ee48(0x16b)+kitty+'\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+cock+_0x30ee48(0x19a)+_0x30ee48(0x16b)+sad_cat+'\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+doggo_dance+_0x30ee48(0x19a)+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+shaky_shaky+'\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+ban_ban+_0x30ee48(0x19a)+_0x30ee48(0x16b)+joy_abel+'\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+daze_laugh+_0x30ee48(0x19a)+_0x30ee48(0x16b)+mad_blob+_0x30ee48(0x19a)+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+flame+'\x22\x20width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+gg+_0x30ee48(0x19a)+_0x30ee48(0x16b)+clappin_cheeks+_0x30ee48(0x19a)+_0x30ee48(0x16b)+dababy+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+peaceout+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+wut+_0x30ee48(0x13d)+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+ez+_0x30ee48(0x13d)+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+twerk+_0x30ee48(0x13d)+_0x30ee48(0x16b)+stare+_0x30ee48(0x13d)+_0x30ee48(0x16b)+hakcan+_0x30ee48(0x13d)+_0x30ee48(0x16b)+thonk+_0x30ee48(0x13d)+_0x30ee48(0x16b)+awana+_0x30ee48(0x13d)+_0x30ee48(0x16b)+clapp+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+amongus+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+vibing+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+eri+_0x30ee48(0x13d)+'<img\x20class=\x22emoji_text\x22\x20src=\x22'+sheeesh+'\x22width=\x2235\x22\x20height=\x2235\x22></img>'+_0x30ee48(0x16b)+mcdonalds+_0x30ee48(0x13d)+_0x30ee48(0x16b)+fourK+_0x30ee48(0x13d),emoji_list[_0x30ee48(0x13f)][0x0][_0x30ee48(0x165)]('click',function(){var _0x9d5547=_0x30ee48;navigator[_0x9d5547(0x159)][_0x9d5547(0x142)](':kitty:');}),emoji_list[_0x30ee48(0x13f)][0x1][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x414ef5=_0x30ee48;navigator[_0x414ef5(0x159)][_0x414ef5(0x142)](':cock:');}),emoji_list['children'][0x2][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x38f2a6=_0x30ee48;navigator[_0x38f2a6(0x159)][_0x38f2a6(0x142)](_0x38f2a6(0x164));}),emoji_list[_0x30ee48(0x13f)][0x3][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x4ba712=_0x30ee48;navigator['clipboard'][_0x4ba712(0x142)](_0x4ba712(0x15c));}),emoji_list[_0x30ee48(0x13f)][0x4][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x130760=_0x30ee48;navigator[_0x130760(0x159)][_0x130760(0x142)](':shakyshaky:');}),emoji_list['children'][0x5]['addEventListener'](_0x30ee48(0x19b),function(){var _0x2a23d7=_0x30ee48;navigator['clipboard'][_0x2a23d7(0x142)](_0x2a23d7(0x160));}),emoji_list[_0x30ee48(0x13f)][0x6][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x2586a2=_0x30ee48;navigator['clipboard'][_0x2586a2(0x142)](_0x2586a2(0x151));}),emoji_list['children'][0x7][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x88a268=_0x30ee48;navigator[_0x88a268(0x159)][_0x88a268(0x142)](_0x88a268(0x13e));}),emoji_list[_0x30ee48(0x13f)][0x8][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x139bbe=_0x30ee48;navigator[_0x139bbe(0x159)][_0x139bbe(0x142)](_0x139bbe(0x15a));}),emoji_list[_0x30ee48(0x13f)][0x9][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x5bd6ae=_0x30ee48;navigator[_0x5bd6ae(0x159)][_0x5bd6ae(0x142)](_0x5bd6ae(0x152));}),emoji_list['children'][0xa][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x4b6251=_0x30ee48;navigator[_0x4b6251(0x159)][_0x4b6251(0x142)](':gg:');}),emoji_list[_0x30ee48(0x13f)][0xb][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x457084=_0x30ee48;navigator[_0x457084(0x159)]['writeText'](':clappincheeks:');}),emoji_list[_0x30ee48(0x13f)][0xc][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0xf7dea4=_0x30ee48;navigator[_0xf7dea4(0x159)]['writeText'](_0xf7dea4(0x185));}),emoji_list[_0x30ee48(0x13f)][0xd][_0x30ee48(0x165)]('click',function(){var _0x332351=_0x30ee48;navigator[_0x332351(0x159)][_0x332351(0x142)](_0x332351(0x196));}),emoji_list[_0x30ee48(0x13f)][0xe]['addEventListener'](_0x30ee48(0x19b),function(){var _0x4df63d=_0x30ee48;navigator[_0x4df63d(0x159)][_0x4df63d(0x142)](_0x4df63d(0x186));}),emoji_list[_0x30ee48(0x13f)][0xf][_0x30ee48(0x165)]('click',function(){var _0x3dc4e0=_0x30ee48;navigator[_0x3dc4e0(0x159)][_0x3dc4e0(0x142)](_0x3dc4e0(0x195));}),emoji_list[_0x30ee48(0x13f)][0x10][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x4eed86=_0x30ee48;navigator['clipboard'][_0x4eed86(0x142)](_0x4eed86(0x14e));}),emoji_list['children'][0x11]['addEventListener'](_0x30ee48(0x19b),function(){var _0x33df17=_0x30ee48;navigator['clipboard'][_0x33df17(0x142)](_0x33df17(0x198));}),emoji_list[_0x30ee48(0x13f)][0x12]['addEventListener'](_0x30ee48(0x19b),function(){var _0x315f64=_0x30ee48;navigator['clipboard'][_0x315f64(0x142)](_0x315f64(0x197));}),emoji_list[_0x30ee48(0x13f)][0x13][_0x30ee48(0x165)]('click',function(){navigator['clipboard']['writeText'](':thonk:');}),emoji_list[_0x30ee48(0x13f)][0x14][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x5482f4=_0x30ee48;navigator[_0x5482f4(0x159)][_0x5482f4(0x142)](':awana:');}),emoji_list[_0x30ee48(0x13f)][0x15][_0x30ee48(0x165)]('click',function(){var _0x54434f=_0x30ee48;navigator[_0x54434f(0x159)][_0x54434f(0x142)](_0x54434f(0x14c));}),emoji_list['children'][0x16][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0x4969f5=_0x30ee48;navigator[_0x4969f5(0x159)]['writeText'](_0x4969f5(0x19d));}),emoji_list[_0x30ee48(0x13f)][0x17][_0x30ee48(0x165)]('click',function(){var _0x344d71=_0x30ee48;navigator[_0x344d71(0x159)]['writeText'](_0x344d71(0x16e));}),emoji_list[_0x30ee48(0x13f)][0x18][_0x30ee48(0x165)]('click',function(){var _0x160dfe=_0x30ee48;navigator[_0x160dfe(0x159)][_0x160dfe(0x142)](_0x160dfe(0x171));}),emoji_list['children'][0x19][_0x30ee48(0x165)]('click',function(){var _0x379eca=_0x30ee48;navigator[_0x379eca(0x159)][_0x379eca(0x142)](_0x379eca(0x189));}),emoji_list[_0x30ee48(0x13f)][0x1a][_0x30ee48(0x165)](_0x30ee48(0x19b),function(){var _0xe78d51=_0x30ee48;navigator['clipboard'][_0xe78d51(0x142)](_0xe78d51(0x16d));}),emoji_list['children'][0x1b]['addEventListener'](_0x30ee48(0x19b),function(){var _0x718d62=_0x30ee48;navigator[_0x718d62(0x159)]['writeText'](_0x718d62(0x150));});
+    //---------------------------Emoji links-----------------------------\\
+    // -- '<img src="" width="20" height="20"></img>'
+    var kitty =         'https://emoji.gg/assets/emoji/9553-cat-smile.png'
+    var cock =          'https://c.tenor.com/9QMTL4kgC5UAAAAC/dead-emoji.gif'
+    var sad_cat =       'https://emoji.discord.st/emojis/1685a79a-23f8-4307-9487-a1a5cb59302f.png'
+    var doggo_dance =   'https://emoji.discord.st/emojis/d3897e57-3a33-4136-a6bb-882343233261.gif'
+    var shaky_shaky =   'https://cdn.discordapp.com/attachments/931966555976245279/937783980118397008/shakyshaky.gif'
+    var ban_ban =       'https://emoji.discord.st/emojis/73e3dd54-6b57-46ef-b9de-3ed3914bbd0b.png'
+    var joy_abel =      'https://emoji.discord.st/emojis/JoyRow.gif'
+    var daze_laugh =    'https://emoji.discord.st/emojis/972d318f-0fd3-4201-827a-bec816a02707.gif'
+    var mad_blob =      'https://emoji.discord.st/emojis/3c09050d-653c-45e5-836d-8847002dc6dc.gif'
+    var flame =         'https://emoji.discord.st/emojis/78a303da-784c-48ab-b97d-692c14c37347.gif'
+    var gg =            'https://emoji.discord.st/emojis/73aa155b-1952-4fed-86e4-22a2950cdb7a.png'
+    var clappin_cheeks ='https://emoji.gg/assets/emoji/1403-assslap.gif'
+    var dababy =        'https://emoji.discord.st/emojis/22e67c14-a37c-4ad3-92f4-721df22e8a06.jpeg'
+    var peaceout =      'https://emoji.discord.st/emojis/aed6a6c0-9b80-48e5-8170-ee6c1f0a415e.gif'
+    var wut =           'https://emoji.discord.st/emojis/b88a98c3-878d-4007-97df-afeb85c31449.png'
+    var ez =            'https://emoji.discord.st/emojis/EZ.png'
+    var twerk =         'https://emoji.discord.st/emojis/ac216976-90ff-4b42-8006-fafdaab6fab1.gif'
+    var stare =         'https://emoji.discord.st/emojis/74aa6827-fd4b-4ef1-bafd-d224ff8b42fe.png'
+    var hakcan =        'https://emoji.discord.st/emojis/0dcfa262-39b8-4d96-b7cf-b1926ad8e9cc.gif'
+    var thonk =         'https://emoji.discord.st/emojis/thonk.png'
+    var awana =         'https://emoji.discord.st/emojis/c2ad2f8b-9263-4e2e-964a-f42741a33d01.gif'
+    var clapp =         'https://emoji.discord.st/emojis/1b454d04-3ba8-425e-b379-3e4a69554970.gif'
+    var amongus =       'https://emoji.discord.st/emojis/8c137b4f-d1af-4a61-a3d1-b2709aa50daf.gif'
+    var vibing =        'https://emoji.discord.st/emojis/a21ddac1-3f6b-47ec-838b-3a330bb2f5ae.gif'
+    var eri =           'https://emoji.discord.st/emojis/9b48b483-f8a9-45bd-8bcf-f5b64ed01945.webp'
+    var sheeesh =       'https://emoji.discord.st/emojis/da4e55ab-16e2-494c-b2be-be54d71b841c.png'
+    var mcdonalds =     'https://emoji.discord.st/emojis/c580ab93-b37d-49d7-9fd5-9f8db08fbb34.png'
+    var fourK =         'https://emoji.gg/assets/emoji/1309-caughtin4k.gif'
+
+setInterval(function() {
+    try {
+
+        var private_chat = document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("message")[0].innerHTML
+        var public_chat = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("message")[0].innerHTML
+        var private = 'chat-party-room'
+        var public = 'chat-all-room'
+
+        //---------------------------------------------[Kitty]---------------------------------------------\\
+
+        if (private_chat.includes(":kitty:")){          
+            var chat = private_chat.replace(':kitty:', '<img src="'+kitty+'"width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        } 
+        else if (public_chat.includes(":kitty:")){           
+            var chat = public_chat.replace(':kitty:', '<img src="'+kitty+'"width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[cock]---------------------------------------------\\  
+        
+        if (private_chat.includes(":cock:")){
+            var chat = private_chat.replace(':cock:', '<img src="'+cock+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":cock:")){
+            var chat = public_chat.replace(':cock:', '<img src="'+cock+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[sadcat]---------------------------------------------\\
+        
+        if (private_chat.includes(":sadcat:")){
+            var chat = private_chat.replace(':sadcat:', '<img src="'+sad_cat+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":sadcat:")){
+            var chat = public_chat.replace(':sadcat:', '<img src="'+sad_cat+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[doggodance]---------------------------------------------\\
+
+        if (private_chat.includes(":doggodance:")){
+            var chat = private_chat.replace(':doggodance:', '<img src="'+doggo_dance+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":doggodance:")){
+            var chat = public_chat.replace(':doggodance:', '<img src="'+doggo_dance+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[shakyshaky]---------------------------------------------\\
+
+        if (private_chat.includes(":shakyshaky:")){
+            var chat = private_chat.replace(':shakyshaky:', '<img src="'+shaky_shaky+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":shakyshaky:")){
+            var chat = public_chat.replace(':shakyshaky:', '<img src="'+shaky_shaky+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[ban]---------------------------------------------\\
+
+        if (private_chat.includes(":ban:")){
+            var chat = private_chat.replace(':ban:', '<img src="'+ban_ban+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":ban:")){
+            var chat = public_chat.replace(':ban:', '<img src="'+ban_ban+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[joyabel]---------------------------------------------\\
+
+        if (private_chat.includes(":joyabel:")){
+            var chat = private_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":joyabel:")){
+            var chat = public_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[dazelaugh]---------------------------------------------\\
+        
+        if (private_chat.includes(":dazelaugh:")){
+            var chat = private_chat.replace(':dazelaugh:', '<img src="'+daze_laugh+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":dazelaugh:")){
+            var chat = public_chat.replace(':dazelaugh:', '<img src="'+daze_laugh+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[madblob]---------------------------------------------\\
+                        
+        if (private_chat.includes(":madblob:")){
+            var chat = private_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":madblob:")){
+            var chat = public_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[flame]---------------------------------------------\\
+                                
+        if (private_chat.includes(":flame:")){
+            var chat = private_chat.replace(':flame:', '<img src="'+flame+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":flame:")){
+            var chat = public_chat.replace(':flame:', '<img src="'+flame+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[gg]---------------------------------------------\\
+                                        
+        if (private_chat.includes(":gg:")){
+            var chat = private_chat.replace(':gg:', '<img src="'+gg+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":gg:")){
+            var chat = public_chat.replace(':gg:', '<img src="'+gg+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        //---------------------------------------------[clappincheeks]---------------------------------------------\\
+                                                
+        if (private_chat.includes(":clappincheeks:")){
+            var chat = private_chat.replace(':clappincheeks:', '<img src="'+clappin_cheeks+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":clappincheeks:")){
+            var chat = public_chat.replace(':clappincheeks:', '<img src="'+clappin_cheeks+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[dababy]---------------------------------------------\\
+
+        if (private_chat.includes(":dababy:")){
+            var chat = private_chat.replace(':dababy:', '<img src="'+dababy+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":dababy:")){
+            var chat = public_chat.replace(':dababy:', '<img src="'+dababy+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[peaceout]---------------------------------------------\\
+                
+        if (private_chat.includes(":peaceout:")){
+            var chat = private_chat.replace(':peaceout:', '<img src="'+peaceout+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":peaceout:")){
+            var chat = public_chat.replace(':peaceout:', '<img src="'+peaceout+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[wut]---------------------------------------------\\
+                
+        if (private_chat.includes(":wut:")){
+            var chat = private_chat.replace(':wut:', '<img src="'+wut+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":wut:")){
+            var chat = public_chat.replace(':wut:', '<img src="'+wut+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[ez]---------------------------------------------\\
+                
+        if (private_chat.includes(":ez:")){
+            var chat = private_chat.replace(':ez:', '<img src="'+ez+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":ez:")){
+            var chat = public_chat.replace(':ez:', '<img src="'+ez+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[twerk]---------------------------------------------\\
+                
+        if (private_chat.includes(":twerk:")){
+            var chat = private_chat.replace(':twerk:', '<img src="'+twerk+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":twerk:")){
+            var chat = public_chat.replace(':twerk:', '<img src="'+twerk+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[stare]---------------------------------------------\\
+                
+        if (private_chat.includes(":stare:")){
+            var chat = private_chat.replace(':stare:', '<img src="'+stare+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":stare:")){
+            var chat = public_chat.replace(':stare:', '<img src="'+stare+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[hakcan]---------------------------------------------\\
+                
+        if (private_chat.includes(":hakcan:")){
+            var chat = private_chat.replace(':hakcan:', '<img src="'+hakcan+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":hakcan:")){
+            var chat = public_chat.replace(':hakcan:', '<img src="'+hakcan+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[thonk]---------------------------------------------\\
+                
+        if (private_chat.includes(":thonk:")){
+            var chat = private_chat.replace(':thonk:', '<img src="'+thonk+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":thonk:")){
+            var chat = public_chat.replace(':thonk:', '<img src="'+thonk+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[awana]---------------------------------------------\\
+                
+        if (private_chat.includes(":awana:")){
+            var chat = private_chat.replace(':awana:', '<img src="'+awana+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":awana:")){
+            var chat = public_chat.replace(':awana:', '<img src="'+awana+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[clapp]---------------------------------------------\\
+                        
+        if (private_chat.includes(":clapp:")){
+            var chat = private_chat.replace(':clapp:', '<img src="'+clapp+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":clapp:")){
+            var chat = public_chat.replace(':clapp:', '<img src="'+clapp+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[amongus]---------------------------------------------\\
+                        
+        if (private_chat.includes(":amongus:")){
+            var chat = private_chat.replace(':amongus:', '<img src="'+amongus+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":amongus:")){
+            var chat = public_chat.replace(':amongus:', '<img src="'+amongus+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[vibing]---------------------------------------------\\
+                        
+        if (private_chat.includes(":vibing:")){
+            var chat = private_chat.replace(':vibing:', '<img src="'+vibing+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":vibing:")){
+            var chat = public_chat.replace(':vibing:', '<img src="'+vibing+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[eri]---------------------------------------------\\
+                        
+        if (private_chat.includes(":eri:")){
+            var chat = private_chat.replace(':eri:', '<img src="'+eri+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":eri:")){
+            var chat = public_chat.replace(':eri:', '<img src="'+eri+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[sheeesh]---------------------------------------------\\
+                        
+        if (private_chat.includes(":sheeesh:")){
+            var chat = private_chat.replace(':sheeesh:', '<img src="'+sheeesh+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":sheeesh:")){
+            var chat = public_chat.replace(':sheeesh:', '<img src="'+sheeesh+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[mcdonalds]---------------------------------------------\\
+                        
+        if (private_chat.includes(":mcdonalds:")){
+            var chat = private_chat.replace(':mcdonalds:', '<img src="'+mcdonalds+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":mcdonalds:")){
+            var chat = public_chat.replace(':mcdonalds:', '<img src="'+mcdonalds+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[something]---------------------------------------------\\
+                        
+        if (private_chat.includes(":caught4k:")){
+            var chat = private_chat.replace(':caught4k:', '<img src="'+fourK+'" width="20" height="20"></img>');
+            document.getElementById(private).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+        else if (public_chat.includes(":caught4k:")){
+            var chat = public_chat.replace(':caught4k:', '<img src="'+fourK+'" width="20" height="20"></img>');
+            document.getElementById(public).lastElementChild.getElementsByClassName("message")[0].innerHTML = chat;
+        }
+
+        //---------------------------------------------[something]---------------------------------------------\\
+    } catch (error) {
+        if (error.name.toString() == "TypeError") {
+}}},);
+const emoji_button = document.createElement("div")
+emoji_button.id = 'emoji_tab_button'
+document.getElementById("huds").appendChild(emoji_button)
+document.getElementById('emoji_tab_button').innerHTML = '<img class="emoji_button" src="https://emoji.gg/assets/emoji/4261-cooldoggo.gif" alt="logo" width="45" height="45">'
+document.getElementById('emoji_tab_button').addEventListener('click', emoji_list_show)
+const emoji_list_a = document.createElement("div")
+emoji_list_a.id = 'emoji_tab_list'
+document.getElementById("huds").appendChild(emoji_list_a)
+function emoji_list_show(){
+    if (document.getElementById('emoji_tab_list').style.display === 'none'){
+        document.getElementById('emoji_tab_list').style.display = 'grid'
+        document.getElementById('emoji_tab_button').style.left = "466px";
+    }else {
+        document.getElementById('emoji_tab_list').style.display = 'none'
+        document.getElementById('emoji_tab_button').style.left = "235px";
+    }
+}
+var emoji_list = document.getElementById('emoji_tab_list')
+emoji_list.style.display = 'none'
+emoji_list.innerHTML =  '<img class="emoji_text" src="'+kitty+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+cock+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+sad_cat+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+doggo_dance+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+shaky_shaky+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+ban_ban+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+joy_abel+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+daze_laugh+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+mad_blob+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+flame+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+gg+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+clappin_cheeks+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+dababy+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+peaceout+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+wut+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+ez+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+twerk+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+stare+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+hakcan+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+thonk+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+awana+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+clapp+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+amongus+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+vibing+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+eri+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+sheeesh+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+mcdonalds+'"width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+fourK+'"width="35" height="35"></img>'
+var textbar = document.getElementById("chat-box")
+emoji_list.children[0].addEventListener('click', function(){textbar.value = ':kitty:'})
+emoji_list.children[1].addEventListener('click', function(){textbar.value = ':cock:'})
+emoji_list.children[2].addEventListener('click', function(){textbar.value = ':sadcat:'})
+emoji_list.children[3].addEventListener('click', function(){textbar.value = ':doggodance:'})
+emoji_list.children[4].addEventListener('click', function(){textbar.value = ':shakyshaky:'})
+emoji_list.children[5].addEventListener('click', function(){textbar.value = ':ban:'})
+emoji_list.children[6].addEventListener('click', function(){textbar.value = ':joyabel:'})
+emoji_list.children[7].addEventListener('click', function(){textbar.value = ':dazelaugh:'})
+emoji_list.children[8].addEventListener('click', function(){textbar.value = ':madblob:'})
+emoji_list.children[9].addEventListener('click', function(){textbar.value = ':flame:'})
+emoji_list.children[10].addEventListener('click', function(){textbar.value = ':gg:'})
+emoji_list.children[11].addEventListener('click', function(){textbar.value = ':clappincheeks:'})
+emoji_list.children[12].addEventListener('click', function(){textbar.value = ':dababy:'})
+emoji_list.children[13].addEventListener('click', function(){textbar.value = ':peaceout:'})
+emoji_list.children[14].addEventListener('click', function(){textbar.value = ':wut:'})
+emoji_list.children[15].addEventListener('click', function(){textbar.value = ':ez:'})
+emoji_list.children[16].addEventListener('click', function(){textbar.value = ':twerk:'})
+emoji_list.children[17].addEventListener('click', function(){textbar.value = ':stare:'})
+emoji_list.children[18].addEventListener('click', function(){textbar.value = ':hakcan:'})
+emoji_list.children[19].addEventListener('click', function(){textbar.value = ':thonk:'})
+emoji_list.children[20].addEventListener('click', function(){textbar.value = ':awana:'})
+emoji_list.children[21].addEventListener('click', function(){textbar.value = ':clapp:'})
+emoji_list.children[22].addEventListener('click', function(){textbar.value = ':amongus:'})
+emoji_list.children[23].addEventListener('click', function(){textbar.value = ':vibing:'})
+emoji_list.children[24].addEventListener('click', function(){textbar.value = ':eri:'})
+emoji_list.children[25].addEventListener('click', function(){textbar.value = ':sheeesh:'})
+emoji_list.children[26].addEventListener('click', function(){textbar.value = ':mcdonalds:'})
+emoji_list.children[27].addEventListener('click', function(){textbar.value = ':caught4k:'})
