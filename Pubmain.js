@@ -1,43 +1,29 @@
 (function() {
     let style = 
 `<style>
-
-@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap);.account-profile {
-    height: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-between;
-    justify-content: space-between
-}
 .loop-holder {
     display: flex;
     white-space: nowrap;
     overflow: hidden;
   }
-  
-  .loop-holder__text {
-      animation: textLoop 10s linear infinite;
-      font-size: 100%;
-      padding-right: .35em;
-      resize: none;
-      color: red;
-      font-weight: bold;
-  }
-  
-  
-  @keyframes textLoop {
-      0% {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0)
-      }
-      100% {
-          -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0)
-      }
-  }
-
+.loop-holder__text {
+    animation: textLoop 10s linear infinite;
+    font-size: 100%;
+    padding-right: .35em;
+    resize: none;
+    color: red;
+    font-weight: bold;
+}
+@keyframes textLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+}
 #huds #emoji_tab_button {
     position: fixed;
     bottom: 50px;
@@ -53,7 +39,6 @@
     left: 238px;
     transform-origin: left;
     background: rgba(10,10,10,.3);
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
@@ -62,496 +47,42 @@
 .emoji_text:hover {
     transform: scale(1.3);
     }
-
-
-
-#account-panel button:hover {
-    background: #940000;
-    border-bottom: 4px solid #940000
-}
-.custom-games .main-menu .panel.center #play:hover,.custom-games .main-menu .panel.center #spectate:hover,.custom-games .main-menu .panel.center .btn:hover {
-    background: #940000;
-    border-bottom: 4px solid #940000
-}
-.custom-games .panel .btn:hover {
-    background-color: #940000
-}
-#menu .main-menu .panel.left .setting-btn-container #replays-toggle:hover,#menu .main-menu .panel.left .setting-btn-container #settings-toggle:hover {
-    background: #940000
-}
-#menu .main-menu .panel.center #play:hover,#menu .main-menu .panel.center #spectate:hover,#menu .main-menu .panel.center .btn:hover {
-    background: #940000;
-    border-bottom: 4px solid #940000
-}
-#skin-modal .content button:hover {
-    background: #940000;
-    border-bottom: 4px solid #940000
-}
-#menu .main-menu .panel.right .region-selectors .tab.active {
-    background: #3330;
-    border-top: 2px solid red;
-}
-
 #menu .main-menu .panel.right .list-container .list-row:hover {
     background: #ffffff3d;
 }
-
+#menu .main-menu .panel.right .region-selectors .tab.active {
+    background: #3330;
+}
 #ad-slot-center-panel, #main-left-panel {
     background-color: #3330;
-    font-weight: 500;
-    box-sizing: border-box;
 }
-
 #menu .main-menu .panel.center .input-field {
-    padding: 0 10px;
-    border-radius: 2px;
     background: #28282857;
-    color: #fff;
-    border: none;
-    margin-bottom: 5px;
-    height: 34px;
-    font-family: Rajdhani;
-    font-weight: 500;
-    font-size: 18px;
-    outline: none;
-    box-sizing: border-box;
 }
 #menu .main-menu .panel.right .region-selectors .tab {
-    display: inline-block;
-    width: 108px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
     background: #3330;
-    padding: 5px 0;
-    box-sizing: border-box;
-    cursor: pointer;
 }
 
 #menu .main-menu .panel.right .list-container {
     background: #3330;
-    width: 100%;
-    height: 450px;
-    margin-top: -1px;
-    padding: 5px;
-    box-sizing: border-box;
 }
-
 .account-profile .account-panel {
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    overflow: hidden;
     background-color: #3330;
-    border-radius: 8px;
-    padding: 10px;
 }
-
 #menu .main-menu .panel.right .list-container #server-list {
     background: #3330;
-    margin-top: 1px;
-    height: 410px;
 }
-
-#menu .main-menu .panel.left .profile-controls .skin-preview {
-    background-color: #333;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: 12px;
-    border: 3px solid #B50000;
-    box-sizing: border-box;
-    background-size: cover!important;
-    transition: border-color .15s ease-out;
-}
-
-.account-profile .exp-area {
-    margin-top: 15px;
-    position: relative;
-    width: 100%;
-    background: #3330;
-    border-radius: 6px;
-    padding: 5px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border: 2px solid #B50000
-}
-
-.account-profile .exp-fill {
-    position: absolute;
-    background: #B50000;
-    border-radius: 4px;
-    height: calc(100% - 10px);
-    width: -10px;
-    transition: all 1s
-}
-
-#account-panel button {
-    color: #fff;
-    border-radius: 2px;
-    height: 38px;
-    margin-bottom: 5px;
-    font-family: Rajdhani;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
-    width: 110px;
-    background: #B50000;
-    border: none;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s;
-    margin-top: 20px
-}
-
 #account-panel #pf-avatar {
-    border-radius: 50%;
     border: 6px solid #3330;
     background-color: #3330;
-    width: 85px;
-    height: 85px;
-    margin-right: 15px;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out,-webkit-transform .3s ease-out
 }
-
-#replays-panel .close-button {
-    position: fixed;
-    top: 0;
-    right: 8px;
-    text-align: center;
-    width: 50px;
-    font-size: 15px;
-    padding-top: 3px;
-    background: #B50000;
-    border-radius: 0 0 2px 2px;
-    cursor: pointer;
-    z-index: 1;
-    border: 5px solid #111;
-    border-top: 0;
-    padding-bottom: 1px
-}
-
-#replays-panel .panel-taps .import-tap .icon {
-    color: #B50000
-}
-
-#replays-panel .panel-taps .import-tap:hover button {
-    background: #B50000
-}
-
-#replays-panel .ps__thumb-y {
-    background-color: #B50000
-}
-
-#replays-panel .ps__rail-y.ps--clicking .ps__thumb-y,#replays-panel .ps__rail-y:focus>.ps__thumb-y,#replays-panel .ps__rail-y:hover>.ps__thumb-y {
-    width: 6px;
-    background-color: #B50000
-}
-
-.replay-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: #B50000;
-    border-radius: 100%
-}
-
-.replay-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #B50000;
-    border-radius: 100%
-}
-
-.custom-games .main-menu .panel.center .btn {
-    width: 100%;
-    background: #B50000;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s
-}
-
-.custom-games .main-menu .panel.center #play,.custom-games .main-menu .panel.center #spectate {
-    width: 155px;
-    background: #B50000;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s
-}
-
-.custom-games .main-menu .panel.right .region-selectors .tab.active {
-    background: #444;
-    border-top: 2px solid #B50000
-}
-
-.custom-games .main-menu .panel.right .list-container .list-row.active {
-    background: #B50000
-}
-
-.custom-games .panel .btn {
-    background-color: #B50000;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 15px;
-    outline: none;
-    box-shadow: none;
-    cursor: pointer;
-    margin: 0 auto;
-    padding: 8px 7px;
-    width: 100%;
-    font-family: Rajdhani;
-    border: none;
-    border-bottom: 2px solid #B50000;
-    transition: all .3s
-}
-
-.custom-games .inner-content .close-button {
-    position: fixed;
-    top: 0;
-    right: 15px;
-    text-align: center;
-    width: 50px;
-    font-size: 15px;
-    padding-top: 3px;
-    background: #B50000;
-    border-radius: 0 0 2px 2px;
-    cursor: pointer;
-    z-index: 2;
-    border: 5px solid #181818;
-    border-top: 0
-}
-
-.custom-games .confirm-model .sw-btn input:checked+span {
-    background-color: #B50000
-}
-
-.custom-games .main-menu.host .room-container .title {
-    margin-bottom: 10px;
-    color: #B50000
-}
-
-#new-panel .close-button,#settings-panel .close-button {
-    position: fixed;
-    top: 0;
-    right: 15px;
-    text-align: center;
-    width: 50px;
-    font-size: 15px;
-    padding-top: 3px;
-    background: #B50000;
-    border-radius: 0 0 2px 2px;
-    cursor: pointer;
-    z-index: 1;
-    border: 5px solid #181818;
-    border-top: 0
-}
-
 #new-panel .partition.left .tab:hover,#settings-panel .partition.left .tab:hover {
     background: #222
 }
-
-#new-panel .partition.left .tab[active],#settings-panel .partition.left .tab[active] {
-    background: #B50000
-}
-
-#new-panel .partition.right .setting.opt-toggle .toggle-btn.active .slide,#settings-panel .partition.right .setting.opt-toggle .toggle-btn.active .slide {
-    background: #B50000
-}
-
-#new-panel .partition.right .setting.opt-button button,#settings-panel .partition.right .setting.opt-button button {
-    color: #fff;
-    background: #B50000;
-    padding: 0;
-    border: 0;
-    height: 45px;
-    width: 140px;
-    margin: 2px;
-    cursor: pointer
-}
-
-#new-panel .partition.right .setting.opt-range .range-box .fake-range .fill-outer,#settings-panel .partition.right .setting.opt-range .range-box .fake-range .fill-outer {
-    width: 538px;
-    border-left: 11px solid #B50000;
-    border-right: 11px solid #484848;
-    height: 100%
-}
-
-#new-panel .partition.right .setting.opt-range .range-box .fake-range .fill-outer .fill,#settings-panel .partition.right .setting.opt-range .range-box .fake-range .fill-outer .fill {
-    width: 40%;
-    height: 100%;
-    background: #B50000
-}
-
 #menu .main-menu {
-    width: 1015px;
-    min-height: 100px;
-    background-color: #111;
     background-image: url();
     background-size: 1015px 539px;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    border-radius: 4px;
-    border: 2px solid #272727;
-    box-shadow: 0 0 20px #0a0a0a;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%)
 }
-
-#menu .main-menu .panel.left .setting-btn-container #custom-games-toggle,#menu .main-menu .panel.left .setting-btn-container #music-toggle,#menu .main-menu .panel.left .setting-btn-container #players-list-toggle,#menu .main-menu .panel.left .setting-btn-container #replays-toggle,#menu .main-menu .panel.left .setting-btn-container #settings-toggle {
-    background: #B50000;
-    width: 60px;
-    height: 26px;
-    padding-top: 2px;
-    font-size: 18px;
-    border-radius: 4px;
-    text-align: center;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    transition: all .3s;
-    cursor: pointer;
-    display: inline-block
-}
-
-#menu .main-menu .panel.left .profile-controls .skin-preview:active,#menu .main-menu .panel.left .profile-controls .skin-preview:hover {
-    border: 6px solid #B50000
-}
-
-#menu .main-menu .panel.left .info-text a:active {
-    color: #B50000
-}
-
-#menu .main-menu .panel.center .btn {
-    width: 100%;
-    background: #B50000;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s
-}
-
-#menu .main-menu .panel.center #play,#menu .main-menu .panel.center #spectate {
-    width: 155px;
-    background: #B50000;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s
-}
-
-#menu .main-menu .panel.right .list-container .list-row.active {
-    background: #B50000
-}
-
-#endGame .adsPanel .btn {
-    background: #B50000;
-    border: none;
-    border-bottom: 4px solid #B50000;
-    color: #fff;
-    border-radius: 2px;
-    height: 38px;
-    margin-bottom: 5px;
-    font-family: Rajdhani;
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer
-}
-
-::-webkit-scrollbar-thumb {
-    background: #b50000;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #B50000;
-}
-
-#huds .leaderboard-hud #leaderboard-title {
-    background: rgba(0,0,0,.3);
-    margin-bottom: 2px;
-    font-family: Titillium Web,Ubuntu,sans-serif;
-    color: #B50000;
-    font-weight: 300;
-    font-size: 22px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 1px 0 1px 4px
-}
-
-#huds .teamplayers-hud #teamplayers-title {
-    background: rgba(0,0,0,.3);
-    margin-bottom: 2px;
-    font-family: Geogrotesque,Titillium Web,Ubuntu,sans-serif;
-    color: #B50000;
-    font-weight: 300;
-    font-size: 13px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 1px 0 1px 4px
-}
-
-#skin-modal .content .exit-button {
-    background: #B50000;
-    width: 60px;
-    height: 26px;
-    padding-top: 2px;
-    font-size: 18px;
-    border-radius: 0 0 4px 4px;
-    text-align: center;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    transition: all .3s;
-    cursor: pointer;
-    float: right
-}
-
-#skin-modal .content button {
-    width: 100%;
-    padding: 5px 10px;
-    margin: 0 5px;
-    background: #B50000;
-    border: none;
-    border-bottom: 4px solid #B50000;
-    transition: all .3s;
-    outline: none;
-    color: #fff;
-    font-size: 20px;
-    font-family: Rajdhani;
-    font-weight: 700
-}
-
-#skin-modal .content .tabs button:disabled {
-    background: #444;
-    border-bottom-color: #B50000
-}
-
-#skin-modal .content .tabContent .scrollview .grid-item img.selected {
-    border: 5px solid #50000;
-    box-shadow: 0 0 9px 4px #B50000
-}
-
-#skin-modal .content .tabContent .scrollview .grid-item .icon:hover {
-    color: #B50000;
-    opacity: 1;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2)
-}
-
-#skin-modal .content .tabContent .scrollview .grid-item .icon.selected {
-    color: #B50000;
-    opacity: 1
-}
-
-#skin-modal .content .tabContent .pagination a.active {
-    background-color: #B50000;
-    color: #fff;
-    border-radius: 5px
-}
-
 </style>`;
     document.head.insertAdjacentHTML("beforeend", style);
 })();
