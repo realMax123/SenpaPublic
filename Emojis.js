@@ -6,7 +6,7 @@
     var shaky_shaky =   'https://cdn.discordapp.com/attachments/931966555976245279/937783980118397008/shakyshaky.gif'
     var ban_ban =       'https://emoji.discord.st/emojis/73e3dd54-6b57-46ef-b9de-3ed3914bbd0b.png'
     var joy_abel =      'https://emoji.discord.st/emojis/JoyRow.gif'
-    var daze_laugh =    'https://emoji.discord.st/emojis/972d318f-0fd3-4201-827a-bec816a02707.gif'
+    var doggo =         'https://cdn.discordapp.com/emojis/913426535443210270.webp?size=96&quality=lossless'
     var mad_blob =      'https://emoji.discord.st/emojis/3c09050d-653c-45e5-836d-8847002dc6dc.gif'
     var flame =         'https://emoji.discord.st/emojis/78a303da-784c-48ab-b97d-692c14c37347.gif'
     var gg =            'https://emoji.discord.st/emojis/73aa155b-1952-4fed-86e4-22a2950cdb7a.png'
@@ -63,8 +63,8 @@ setInterval(function() {
         if (private_chat.includes(":joyabel:")){chat = private_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');private.innerHTML = chat;}
         if (public_chat.includes(":joyabel:")){chat = public_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');public.innerHTML = chat;}
 //---------------------------------------------[dazelaugh]---------------------------------------------\\
-        if (private_chat.includes(":dazelaugh:")){chat = private_chat.replace(':dazelaugh:', '<img src="'+daze_laugh+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":dazelaugh:")){chat = public_chat.replace(':dazelaugh:', '<img src="'+daze_laugh+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":doggo:")){chat = private_chat.replace(':doggo:', '<img src="'+doggo+'" width="20" height="20"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":doggo:")){chat = public_chat.replace(':doggo:', '<img src="'+doggo+'" width="20" height="20"></img>');public.innerHTML = chat;}
 //---------------------------------------------[madblob]---------------------------------------------\\             
         if (private_chat.includes(":madblob:")){chat = private_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');private.innerHTML = chat;}
         if (public_chat.includes(":madblob:")){chat = public_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');public.innerHTML = chat;}
@@ -177,7 +177,7 @@ emoji_list.innerHTML =  '<img class="emoji_text" src="'+kitty+'" width="35" heig
                         '<img class="emoji_text" src="'+shaky_shaky+'" width="35" height="35"></img>'+
                         '<img class="emoji_text" src="'+ban_ban+'" width="35" height="35"></img>'+
                         '<img class="emoji_text" src="'+joy_abel+'" width="35" height="35"></img>'+
-                        '<img class="emoji_text" src="'+daze_laugh+'" width="35" height="35"></img>'+
+                        '<img class="emoji_text" src="'+doggo+'" width="35" height="35"></img>'+
                         '<img class="emoji_text" src="'+mad_blob+'" width="35" height="35"></img>'+
                         '<img class="emoji_text" src="'+flame+'" width="35" height="35"></img>'+
                         '<img class="emoji_text" src="'+gg+'" width="35" height="35"></img>'+
@@ -214,7 +214,7 @@ emoji_list.children[3].addEventListener('click', function(){textbox = textbar.va
 emoji_list.children[4].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':shakyshaky:';     textbar.value = textbox})
 emoji_list.children[5].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':ban:';            textbar.value = textbox})
 emoji_list.children[6].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':joyabel:';        textbar.value = textbox})
-emoji_list.children[7].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':dazelaugh:';      textbar.value = textbox})
+emoji_list.children[7].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':doggo:';      textbar.value = textbox})
 emoji_list.children[8].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':madblob:';        textbar.value = textbox})
 emoji_list.children[9].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':flame:';          textbar.value = textbox})
 emoji_list.children[10].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':gg:';            textbar.value = textbox})
