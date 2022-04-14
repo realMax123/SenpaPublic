@@ -86,200 +86,203 @@
 </style>`;
     document.head.insertAdjacentHTML("beforeend", style);
 })();
+//Removing useless shit / setting default values for mod / adding small details
 document.getElementsByClassName("advertisement-informer")[0].remove();
 document.getElementsByClassName("partition right")[0].remove();
 document.getElementsByClassName("close-button")[0].remove();
 document.getElementById("ad-slot-center-panel").remove();
 document.getElementsByClassName("banner")[0].remove();
-document.getElementsByClassName("logo")[0].innerHTML = '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
 document.getElementsByClassName("info-text")[0].outerHTML = '<div class="loop-holder"><div class="loop-holder__text">丨Modded By Veky and Shine丨</div><div class="loop-holder__text">丨Modded By Veky and Shine丨</div><div class="loop-holder__text">丨Modded By Veky and Shine丨</div>'
-document.getElementById("endGame").style = ''
 document.getElementById('chat-box').placeholder = '殺ExtendedSenpaす: Send message..'
-const extensionTab = document.createElement("div")
-extensionTab.className = "tab"
-document.getElementsByClassName("partition left")[0].appendChild(extensionTab)
-document.getElementsByClassName("tab")[8].outerHTML = '<div class="tab" type="tab" target-container="settings-list" target-name="Extension"></i>▶ Extended Mod</div>' 
-const extensionOpt = document.createElement("div")
-extensionOpt.className = "list"
-document.getElementsByClassName("partition right")[0].appendChild(extensionOpt)
-document.getElementsByClassName("list")[4].outerHTML = '<div class="list" data-name="extensionopt"></div>'
-const tab_row_extension = document.createElement("div")
-tab_row_extension.className = "tab-row"
-document.getElementsByClassName("list")[4].appendChild(tab_row_extension)
-const tab_menu = document.createElement("div")
-tab_menu.className = "tab"
-document.getElementsByClassName("tab-row")[3].appendChild(tab_menu)
-document.getElementsByClassName("tab")[24].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu">Menu</div>'
-document.getElementsByClassName("tab")[24].setAttribute("active", 4)
-document.getElementsByClassName("list")[4].appendChild(document.createElement("div"))
-document.getElementsByClassName("list")[4].children[1].outerHTML = '<div container-name="settings-list-extension"></div>'
-document.getElementsByClassName("list")[4].children[1].appendChild(document.createElement("div"))
-document.getElementsByClassName('list')[4].children[1].children[0].outerHTML = '<div class="sub-list" data-name="menu" active="true">'
-document.getElementsByClassName("tab")[8].addEventListener("click", button_tab)
+var senpa_log_error = '殺ExtendedSenpaす: Saved changes'
+document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
+
+//Creating Extension tab in settings 
+var partition_left = document.getElementsByClassName("partition left")[0]
+var partition_right = document.getElementsByClassName("partition right")[0]
+partition_left.appendChild(document.createElement('div'))
+partition_left.children[5].outerHTML = '<div class="tab" type="tab" target-container="settings-list" target-name="Extension"></i>▶ Extended Mod</div>' 
+partition_right.appendChild(document.createElement('div'))
+partition_right.children[11].outerHTML = '<div class="list" data-name="extensionopt"></div>'
+var extension = document.getElementsByClassName("list")[4]
+extension.appendChild(document.createElement('div'))
+extension.appendChild(document.createElement('div'))
+extension.children[0].outerHTML = '<div class="tab-row"></div>'
+extension.children[1].outerHTML = '<div container-name="settings-list-extension"></div>'
+
+//Creating Menu and Chat in extended mod settings
+var tab_row = extension.children[0]
+var settings_list = extension.children[1]
+tab_row.appendChild(document.createElement('div'))
+tab_row.appendChild(document.createElement('div'))
+tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
+tab_row.children[1].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="chat">Chat</div>'
+settings_list.appendChild(document.createElement('div'))
+settings_list.appendChild(document.createElement('div'))
+settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active="true">'
+settings_list.children[1].outerHTML = '<div class="sub-list" data-name="chat">'
+
+//Adding click function / click open up mod menu in settings
+var tab = document.getElementsByClassName("tab")
+var list = document.getElementsByClassName("list")
+tab[8].addEventListener("click", button_tab)
+tab_row.children[0].addEventListener("click", button_menu)
+tab_row.children[1].addEventListener("click", button_chat)
 function button_tab(){
-    document.getElementsByClassName("tab")[4].removeAttribute("active")
-    document.getElementsByClassName("tab")[5].removeAttribute("active")
-    document.getElementsByClassName("tab")[6].removeAttribute("active")
-    document.getElementsByClassName("tab")[7].removeAttribute("active")
-    document.getElementsByClassName("tab")[8].setAttribute("active", 4)
-    document.getElementsByClassName("list")[0].removeAttribute("active")
-    document.getElementsByClassName("list")[1].removeAttribute("active")
-    document.getElementsByClassName("list")[2].removeAttribute("active")
-    document.getElementsByClassName("list")[3].removeAttribute("active")
-    document.getElementsByClassName("list")[4].setAttribute("active", 4)
+    tab[4].removeAttribute("active")
+    tab[5].removeAttribute("active")
+    tab[6].removeAttribute("active")
+    tab[7].removeAttribute("active")
+    tab[8].setAttribute("active", 4)
+    list[0].removeAttribute("active")
+    list[1].removeAttribute("active")
+    list[2].removeAttribute("active")
+    list[3].removeAttribute("active")
+    list[4].setAttribute("active", 4)
 }
-const main_menu_background_color = document.createElement("div")
-const main_menu_background_border = document.createElement("div")
-const primary_color = document.createElement("div")
-const senpa_logo = document.createElement("div")
-const xp_bar = document.createElement("div")
-const use_menu_background = document.createElement("div")
-const background_link_placeholder = document.createElement("div")
-main_menu_background_color.className = "setting opt-colorpicker"
-main_menu_background_color.id = "menu_bg_color"
-main_menu_background_border.className = "setting opt-colorpicker"
-main_menu_background_border.id = "menu_border_color"
-primary_color.className = "setting opt-colorpicker"
-primary_color.id = "primary_color"
-senpa_logo.className = "setting opt-dropdown"
-senpa_logo.id = "senpa_logo_color"
-xp_bar.className= "setting opt-toggle"
-xp_bar.id = "xp_bar"
-use_menu_background.className= "setting opt-toggle"
-use_menu_background.id = "use_menu_background"
-background_link_placeholder.className = "setting opt-input"
-background_link_placeholder.id = "background_link_placeholder"
-var elements_tab = document.getElementsByClassName('sub-list')[16]
-elements_tab.appendChild(main_menu_background_color)
-elements_tab.appendChild(main_menu_background_border)
-elements_tab.appendChild(primary_color)
-elements_tab.appendChild(senpa_logo)
-elements_tab.appendChild(xp_bar)
-elements_tab.appendChild(use_menu_background)
-elements_tab.appendChild(background_link_placeholder)
-document.getElementById("menu_bg_color").outerHTML = '<div class="setting opt-colorpicker" id="menu_bg_color"><div class="name">Menu background color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-document.getElementById("menu_border_color").outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-document.getElementById("primary_color").outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-document.getElementById("senpa_logo_color").outerHTML = '<div class="setting opt-dropdown"><div class="name">Senpa logo color</div><div class="dropdown-box"><div class="selected">Red</div><i class="fas fa-chevron-down"></i><div class="dropdown-list">'+
-    '<div class="dropdown-item" id="ownCellColoring">Red</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Orange</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Yellow</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Green</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Dark Green</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Cyan</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Blue</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Dark Blue</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Purple</div>'+
-    '<div class="dropdown-item" id="ownCellColoring">Pink</div>'+   '</div></div></div>'
-document.getElementById("xp_bar").outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp bar</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-document.getElementById("use_menu_background").outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use main menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-document.getElementById("background_link_placeholder").innerHTML = '<div class="name">Main menu background image link</div><input class="text" value="" placeholder="Must be google link | https://"></div>'
-document.getElementById("background_link_placeholder").style.display = "none"
-document.getElementsByClassName("slide")[32].addEventListener("click", use_xp_bar)
-document.getElementsByClassName("ball")[32].addEventListener("click", use_xp_bar)
-document.getElementsByClassName("slide")[33].addEventListener("click", use_menu_button)
-document.getElementsByClassName("ball")[33].addEventListener("click", use_menu_button)
+function button_menu(){
+    tab_row.children[0].setAttribute("active", 4)
+    tab_row.children[1].removeAttribute("active")
+    settings_list.children[0].setAttribute("active", 4)
+    settings_list.children[1].removeAttribute("active")
+}
+function button_chat(){
+    tab_row.children[0].removeAttribute("active")
+    tab_row.children[1].setAttribute("active", 4)
+    settings_list.children[0].removeAttribute("active")
+    settings_list.children[1].setAttribute("active", 4)
+}
+//Adding user settings to menu tab
+var extension_menu = document.getElementsByClassName('sub-list')[16]
+var extension_chat = document.getElementsByClassName('sub-list')[17]
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.appendChild(document.createElement('div'))
+extension_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_bg_color"><div class="name">Menu background color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+extension_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+extension_menu.children[2].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+extension_menu.children[3].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Senpa logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
+var logo_color = document.getElementsByClassName("dropdown-list")[8]
+var logo = document.getElementsByClassName("selected")[8]
+logo_color.appendChild(document.createElement('div')); logo_color.children[0].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Red</div>';          logo_color.children[0].addEventListener('click', function(){logo.textContent = 'Red',       change_logo_color(); save_logo_color();}); 
+logo_color.appendChild(document.createElement('div')); logo_color.children[1].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Orange</div>';       logo_color.children[1].addEventListener('click', function(){logo.textContent = 'Orange',    change_logo_color(); save_logo_color();});   
+logo_color.appendChild(document.createElement('div')); logo_color.children[2].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Yellow</div>';       logo_color.children[2].addEventListener('click', function(){logo.textContent = 'Yellow',    change_logo_color(); save_logo_color();}); 
+logo_color.appendChild(document.createElement('div')); logo_color.children[3].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Green</div>';        logo_color.children[3].addEventListener('click', function(){logo.textContent = 'Green}',    change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[4].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Dark Green</div>';   logo_color.children[4].addEventListener('click', function(){logo.textContent = 'Dark Green',change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[5].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Cyan</div>';         logo_color.children[5].addEventListener('click', function(){logo.textContent = 'Cyan',      change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[6].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Blue</div>';         logo_color.children[6].addEventListener('click', function(){logo.textContent = 'Blue',      change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[7].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Dark Blue</div>';    logo_color.children[7].addEventListener('click', function(){logo.textContent = 'Dark Blue', change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[8].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Purple</div>';       logo_color.children[8].addEventListener('click', function(){logo.textContent = 'Purple',    change_logo_color(); save_logo_color();});
+logo_color.appendChild(document.createElement('div')); logo_color.children[9].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Pink</div>';         logo_color.children[9].addEventListener('click', function(){logo.textContent = 'Pink',      change_logo_color(); save_logo_color();});
+extension_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp bar</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+extension_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+extension_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text"></div>'
+extension_menu.children[6].style.display = "none"
+var link_red =      '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
+var link_orange =   '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">'
+var link_yellow =   '<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">'
+var link_green =    '<img src="https://i.imgur.com/raQFhDP.png" alt="logo">'
+var link_darkgreen ='<img src="https://i.imgur.com/DoBJIsP.png" alt="logo">'
+var link_cyan =     '<img src="https://i.imgur.com/ajnGKuy.png" alt="logo">'
+var link_blue =     '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">'
+var link_darkblue = '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">'
+var link_purple =   '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">'
+var link_pink =     '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">'
 var menu_background_color = document.getElementsByClassName("text minicolors-input")[16]
 var menu_border_color = document.getElementsByClassName("text minicolors-input")[17]
 var main_primary_color = document.getElementsByClassName("text minicolors-input")[18]
 var background_image = document.getElementsByClassName("text")[69]
-var senpa_logo_value = document.getElementsByClassName("dropdown-list")[8]
-document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
-menu_background_color.addEventListener('change', save_background_color);
-menu_border_color.addEventListener('change', save_background_border);
-main_primary_color.addEventListener('change', save_main_primary_color);
-main_primary_color.addEventListener('change', change_primary_color);
-background_image.addEventListener('change', save_background_link);
-senpa_logo_value.children[0].addEventListener('click', senpa_logo_red);
-senpa_logo_value.children[1].addEventListener('click', senpa_logo_orange);
-senpa_logo_value.children[2].addEventListener('click', senpa_logo_yellow);
-senpa_logo_value.children[3].addEventListener('click', senpa_logo_green);
-senpa_logo_value.children[4].addEventListener('click', senpa_logo_darkgreen);
-senpa_logo_value.children[5].addEventListener('click', senpa_logo_cyan);
-senpa_logo_value.children[6].addEventListener('click', senpa_logo_blue);
-senpa_logo_value.children[7].addEventListener('click', senpa_logo_darkblue);
-senpa_logo_value.children[8].addEventListener('click', senpa_logo_purple);
-senpa_logo_value.children[9].addEventListener('click', senpa_logo_pink);
-var senpa_logo_selected = document.getElementsByClassName("selected")[8]
-var senpa_log_error = '殺ExtendedSenpaす: Saved changes'
-var senpa_logo_link = document.getElementsByClassName("logo")[0]
 var toggle_button = document.getElementsByClassName("toggle-btn")
+var main_menu = document.getElementsByClassName("main-menu")[0]
+
+//Addind event listeners for changing, saving user data
+document.getElementById('xp_bar').children[1].addEventListener("click", use_xp_bar)
+document.getElementById('use_menu_background').children[1].addEventListener("click", use_background_button)
+menu_background_color.addEventListener('change', function(){change_background_color(); save_background_color();})
+menu_border_color.addEventListener('change', function(){change_border_color(); save_background_border();})
+main_primary_color.addEventListener('change', function(){change_primary_color(); save_main_primary_color();})
+background_image.addEventListener('change', save_background_link)
+
+//Creating functions for settings
+function change_background_color(){main_menu.style.setProperty("background", menu_background_color.value)}
+function change_border_color(){main_menu.style.boxShadow = '0 0 30px'+menu_border_color.value}
 function use_xp_bar(){
-    if (toggle_button[32].className === 'toggle-btn'){
-        toggle_button[32].className = 'toggle-btn active';chrome.storage.sync.set({'user_xp_button': 'toggle-btn active'},function(){console.log(senpa_log_error)})}
-    else {toggle_button[32].className = 'toggle-btn';     chrome.storage.sync.set({'user_xp_button': 'toggle-btn'},function(){console.log(senpa_log_error)})}}
-function use_menu_button(){
-    if (toggle_button[33].className === 'toggle-btn'){
-        toggle_button[33].className = 'toggle-btn active';chrome.storage.sync.set({'use_menu_bg_button': 'toggle-btn active'},function(){console.log(senpa_log_error)})}
-    else{toggle_button[33].className = 'toggle-btn';      chrome.storage.sync.set({'use_menu_bg_button': 'toggle-btn'},function(){console.log(senpa_log_error)})}}
-function senpa_logo_red(){
-    senpa_logo_selected.textContent = 'Red'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Red'},function(){console.log(senpa_log_error)})}
-function senpa_logo_orange(){
-    senpa_logo_selected.textContent = 'Orange'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Orange'},function(){console.log(senpa_log_error)})}
-function senpa_logo_yellow(){
-    senpa_logo_selected.textContent = 'Yellow'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Yellow'},function(){console.log(senpa_log_error)})}
-function senpa_logo_green(){
-    senpa_logo_selected.textContent = 'Green'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/raQFhDP.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Green'},function(){console.log(senpa_log_error)})}
-function senpa_logo_darkgreen(){
-    senpa_logo_selected.textContent = 'Dark Green'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/DoBJIsP.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Dark Green'},function(){console.log(senpa_log_error)})}
-function senpa_logo_cyan(){
-    senpa_logo_selected.textContent = 'Cyan'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/ajnGKuy.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Cyan'},function(){console.log(senpa_log_error)})}
-function senpa_logo_blue(){
-    senpa_logo_selected.textContent = 'Blue'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Blue'},function(){console.log(senpa_log_error)})}
-function senpa_logo_darkblue(){
-    senpa_logo_selected.textContent = 'Dark Blue'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Dark Blue'},function(){console.log(senpa_log_error)})}
-function senpa_logo_purple(){
-    senpa_logo_selected.textContent = 'Purple'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Purple'},function(){console.log(senpa_log_error)})}
-function senpa_logo_pink(){
-    senpa_logo_selected.textContent = 'Pink'
-    senpa_logo_link.innerHTML ='<img src="https://i.imgur.com/D25DhfC.png" alt="logo">';chrome.storage.sync.set({'senpa_logo_color': 'Pink'},function(){console.log(senpa_log_error)})}
+    if  (toggle_button[32].className === 'toggle-btn')
+        {toggle_button[32].className = 'toggle-btn active'}
+    else{toggle_button[32].className = 'toggle-btn'}
+    save_xp_button();}
+function use_background_button(){
+    if  (toggle_button[33].className === 'toggle-btn')
+        {toggle_button[33].className = 'toggle-btn active'}
+    else{toggle_button[33].className = 'toggle-btn'}
+    save_background_button();}
+function change_logo_color(){
+    var senpa_logo_link = document.getElementsByClassName("logo")[0]
+        if (logo.textContent === 'Red')         {senpa_logo_link.innerHTML = link_red}
+        if (logo.textContent === 'Orange')      {senpa_logo_link.innerHTML = link_orange}
+        if (logo.textContent === 'Yellow')      {senpa_logo_link.innerHTML = link_yellow}
+        if (logo.textContent === 'Green')       {senpa_logo_link.innerHTML = link_green}
+        if (logo.textContent === 'Dark Green')  {senpa_logo_link.innerHTML = link_darkgreen}
+        if (logo.textContent === 'Cyan')        {senpa_logo_link.innerHTML = link_cyan}
+        if (logo.textContent === 'Blue')        {senpa_logo_link.innerHTML = link_blue}
+        if (logo.textContent === 'Dark Blue')   {senpa_logo_link.innerHTML = link_darkblue}
+        if (logo.textContent === 'Purple')      {senpa_logo_link.innerHTML = link_purple}
+        if (logo.textContent === 'Pink')        {senpa_logo_link.innerHTML = link_pink}}
 setInterval(function() {
     var main_menu = document.getElementsByClassName("main-menu")[0]
     var bg_link = document.getElementById("background_link_placeholder")
     try{
-        main_menu.style.setProperty("background", menu_background_color.value);
-        main_menu.style['boxShadow'] = '0 0 20px'+ menu_border_color.value;
-        if (toggle_button[33].className === 'toggle-btn active'){bg_link.style.display = "block";main_menu.style.setProperty("background-image", "url("+background_image.value+")");}
-        else{bg_link.style.display = "none";main_menu.style.setProperty("background-image", ""); }
-        if (toggle_button[32].className === 'toggle-btn active'){document.getElementsByClassName("exp-area")[0].style.display = "none"}
+        if (toggle_button[33].className === 'toggle-btn active'){
+            bg_link.style.display = "block"
+            main_menu.style.setProperty("background-image", "url("+background_image.value+")")}
+        else{bg_link.style.display = "none"
+            main_menu.style.setProperty("background-image", "")}
+        if (toggle_button[32].className === 'toggle-btn active'){
+            document.getElementsByClassName("exp-area")[0].style.display = "none"}
         else{document.getElementsByClassName("exp-area")[0].style.display = ""}
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
     }
 },100);
-function save_background_color(){chrome.storage.sync.set({'bg_color': menu_background_color.value},function(){console.log(senpa_log_error)});}
-function save_background_border(){chrome.storage.sync.set({'border_color': menu_border_color.value},function(){console.log(senpa_log_error)});}
-function save_background_link(){chrome.storage.sync.set({'background_link': background_image.value},function(){console.log(senpa_log_error)});}
-function save_main_primary_color(){chrome.storage.sync.set({'main_color': main_primary_color.value},function(){console.log(senpa_log_error)});}
+
+//Saving all user data settings to google client [cache]
+function save_background_color()    {chrome.storage.sync.set({'bg_color': menu_background_color.value},function(){console.log(senpa_log_error)})}
+function save_background_border()   {chrome.storage.sync.set({'border_color': menu_border_color.value},function(){console.log(senpa_log_error)})}
+function save_main_primary_color()  {chrome.storage.sync.set({'main_color': main_primary_color.value},function(){console.log(senpa_log_error)})}
+function save_logo_color()          {chrome.storage.sync.set({'senpa_logo_color': logo.textContent},function(){console.log(senpa_log_error)})}
+function save_xp_button()           {chrome.storage.sync.set({'user_xp_button': toggle_button[32].className},function(){console.log(senpa_log_error)})}
+function save_background_button()   {chrome.storage.sync.set({'use_menu_bg_button': toggle_button[33]},function(){console.log(senpa_log_error)})}
+function save_background_link()     {chrome.storage.sync.set({'background_link': background_image.value},function(){console.log(senpa_log_error)})}
+
+//Once page is loaded, loading all user data settings from google client [cache]
 window.onload = function(){
     console.log('殺ExtendedSenpaす: Loading data')
     chrome.storage.sync.get(['senpa_logo_color'], function(data){
-        if (data.senpa_logo_color === 'Red'){senpa_logo_link.innerHTML =         '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">', senpa_logo_selected.textContent = 'Red'}
-        if (data.senpa_logo_color === 'Orange'){senpa_logo_link.innerHTML =      '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">', senpa_logo_selected.textContent = 'Orange'}
-        if (data.senpa_logo_color === 'Yellow'){senpa_logo_link.innerHTML =      '<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">', senpa_logo_selected.textContent = 'Yellow'}
-        if (data.senpa_logo_color === 'Green'){senpa_logo_link.innerHTML =       '<img src="https://i.imgur.com/raQFhDP.png" alt="logo">', senpa_logo_selected.textContent = 'Green'}
-        if (data.senpa_logo_color === 'Dark Green'){senpa_logo_link.innerHTML =  '<img src="https://i.imgur.com/DoBJIsP.png" alt="logo">', senpa_logo_selected.textContent = 'Dark Green'}
-        if (data.senpa_logo_color === 'Cyan'){senpa_logo_link.innerHTML =        '<img src="https://i.imgur.com/ajnGKuy.png" alt="logo">', senpa_logo_selected.textContent = 'Cyan'}
-        if (data.senpa_logo_color === 'Blue'){senpa_logo_link.innerHTML =        '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">', senpa_logo_selected.textContent = 'Blue'}
-        if (data.senpa_logo_color === 'Dark Blue'){senpa_logo_link.innerHTML =   '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">', senpa_logo_selected.textContent = 'Dark Blue'}
-        if (data.senpa_logo_color === 'Purple'){senpa_logo_link.innerHTML =      '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">', senpa_logo_selected.textContent = 'Purple'}
-        if (data.senpa_logo_color === 'Pink'){senpa_logo_link.innerHTML =        '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">', senpa_logo_selected.textContent = 'Pink'}})
-    chrome.storage.sync.get(['bg_color'], function(data){menu_background_color.value = data.bg_color;})
-    chrome.storage.sync.get(['border_color'], function(data){menu_border_color.value = data.border_color})
-    chrome.storage.sync.get(['main_color'], function(data){main_primary_color.value = data.main_color, change_primary_color();})
-    chrome.storage.sync.get(['background_link'], function(data){background_image.value = data.background_link})
-    chrome.storage.sync.get(['user_xp_button'], function(data){if (data.user_xp_button === 'toggle-btn active'){toggle_button[32].className = 'toggle-btn active';}else{toggle_button[32].className = 'toggle-btn';}})
-    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){toggle_button[33].className = 'toggle-btn active';}else{toggle_button[33].className = 'toggle-btn';}})}
+        if (data.senpa_logo_color === 'Red')        {logo.textContent = 'Red', change_logo_color()}
+        if (data.senpa_logo_color === 'Orange')     {logo.textContent = 'Orange', change_logo_color()}
+        if (data.senpa_logo_color === 'Yellow')     {logo.textContent = 'Yellow', change_logo_color()}
+        if (data.senpa_logo_color === 'Green')      {logo.textContent = 'Green', change_logo_color()}
+        if (data.senpa_logo_color === 'Dark Green') {logo.textContent = 'Dark Green', change_logo_color()}
+        if (data.senpa_logo_color === 'Cyan')       {logo.textContent = 'Cyan', change_logo_color()}
+        if (data.senpa_logo_color === 'Blue')       {logo.textContent = 'Blue', change_logo_color()}
+        if (data.senpa_logo_color === 'Dark Blue')  {logo.textContent = 'Dark Blue', change_logo_color()}
+        if (data.senpa_logo_color === 'Purple')     {logo.textContent = 'Purple', change_logo_color()}
+        if (data.senpa_logo_color === 'Pink')       {logo.textContent = 'Pink', change_logo_color()}})
+    chrome.storage.sync.get(['bg_color'],           function(data){menu_background_color.value = data.bg_color, change_background_color();})
+    chrome.storage.sync.get(['border_color'],       function(data){menu_border_color.value = data.border_color, change_border_color();})
+    chrome.storage.sync.get(['main_color'],         function(data){main_primary_color.value = data.main_color, change_primary_color();})
+    chrome.storage.sync.get(['background_link'],    function(data){background_image.value = data.background_link})
+    chrome.storage.sync.get(['user_xp_button'],     function(data){if (data.user_xp_button === 'toggle-btn active'){toggle_button[32].className = 'toggle-btn active'}else{toggle_button[32].className = 'toggle-btn'}})
+    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){toggle_button[33].className = 'toggle-btn active';} else{toggle_button[33].className = 'toggle-btn'}})}
+
+//Setting up sleep function
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
+
+//Creating auto remove endgame screen [deth screen] and adding devs to chat
 setInterval(async function() {
     try {
         var end_game = document.getElementById("endGame")
