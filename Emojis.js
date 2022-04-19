@@ -1,4 +1,4 @@
-    //---------------------------Emoji links-----------------------------\\
+        //---------------------------Emoji links-----------------------------\\
     var kitty =         'https://emoji.gg/assets/emoji/9553-cat-smile.png'
     var cock =          'https://c.tenor.com/9QMTL4kgC5UAAAAC/dead-emoji.gif'
     var sad_cat =       'https://emoji.discord.st/emojis/1685a79a-23f8-4307-9487-a1a5cb59302f.png'
@@ -41,111 +41,113 @@ setInterval(function() {
         var public_chat = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("message")[0].innerHTML
         var public = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("message")[0]
         var chat = []
+        var emoji_width =  26;
+        var emoji_height = 26;
 //---------------------------------------------[kitty]---------------------------------------------\\
-        if (private_chat.includes(":kitty:")){chat = private_chat.replace(':kitty:', '<img src="'+kitty+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":kitty:")){chat = public_chat.replace(':kitty:', '<img src="'+kitty+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":kitty:")){chat = private_chat.replace(':kitty:', '<img src="'+kitty+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":kitty:")){chat = public_chat.replace  (':kitty:', '<img src="'+kitty+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[cock]---------------------------------------------\\    
-        if (private_chat.includes(":cock:")){chat = private_chat.replace(':cock:', '<img src="'+cock+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":cock:")){chat = public_chat.replace(':cock:', '<img src="'+cock+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":cock:")){chat = private_chat.replace(':cock:', '<img src="'+cock+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":cock:")){chat = public_chat.replace  (':cock:', '<img src="'+cock+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[sadcat]---------------------------------------------\\   
-        if (private_chat.includes(":sadcat:")){chat = private_chat.replace(':sadcat:', '<img src="'+sad_cat+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":sadcat:")){chat = public_chat.replace(':sadcat:', '<img src="'+sad_cat+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":sadcat:")){chat = private_chat.replace(':sadcat:', '<img src="'+sad_cat+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":sadcat:")){chat = public_chat.replace  (':sadcat:', '<img src="'+sad_cat+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[doggodance]---------------------------------------------\\
-        if (private_chat.includes(":doggodance:")){chat = private_chat.replace(':doggodance:', '<img src="'+doggo_dance+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":doggodance:")){chat = public_chat.replace(':doggodance:', '<img src="'+doggo_dance+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":doggodance:")){chat = private_chat.replace(':doggodance:', '<img src="'+doggo_dance+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":doggodance:")){chat = public_chat.replace  (':doggodance:', '<img src="'+doggo_dance+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[shakyshaky]---------------------------------------------\\
-        if (private_chat.includes(":shakyshaky:")){chat = private_chat.replace(':shakyshaky:', '<img src="'+shaky_shaky+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":shakyshaky:")){chat = public_chat.replace(':shakyshaky:', '<img src="'+shaky_shaky+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":shakyshaky:")){chat = private_chat.replace(':shakyshaky:', '<img src="'+shaky_shaky+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":shakyshaky:")){chat = public_chat.replace  (':shakyshaky:', '<img src="'+shaky_shaky+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[ban]---------------------------------------------\\
-        if (private_chat.includes(":ban:")){chat = private_chat.replace(':ban:', '<img src="'+ban_ban+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":ban:")){chat = public_chat.replace(':ban:', '<img src="'+ban_ban+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":ban:")){chat = private_chat.replace(':ban:', '<img src="'+ban_ban+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":ban:")){chat = public_chat.replace  (':ban:', '<img src="'+ban_ban+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[joyabel]---------------------------------------------\\
-        if (private_chat.includes(":joyabel:")){chat = private_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":joyabel:")){chat = public_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":joyabel:")){chat = private_chat.replace(':joyabel:', '<img src="'+joy_abel+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":joyabel:")){chat = public_chat.replace  (':joyabel:', '<img src="'+joy_abel+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[dazelaugh]---------------------------------------------\\
-        if (private_chat.includes(":doggo:")){chat = private_chat.replace(':doggo:', '<img src="'+doggo+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":doggo:")){chat = public_chat.replace(':doggo:', '<img src="'+doggo+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":doggo:")){chat = private_chat.replace(':doggo:', '<img src="'+doggo+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":doggo:")){chat = public_chat.replace  (':doggo:', '<img src="'+doggo+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[madblob]---------------------------------------------\\             
-        if (private_chat.includes(":madblob:")){chat = private_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":madblob:")){chat = public_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":madblob:")){chat = private_chat.replace(':madblob:', '<img src="'+mad_blob+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":madblob:")){chat = public_chat.replace  (':madblob:', '<img src="'+mad_blob+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[flame]---------------------------------------------\\                     
-        if (private_chat.includes(":flame:")){chat = private_chat.replace(':flame:', '<img src="'+flame+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":flame:")){chat = public_chat.replace(':flame:', '<img src="'+flame+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":flame:")){chat = private_chat.replace(':flame:', '<img src="'+flame+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":flame:")){chat = public_chat.replace  (':flame:', '<img src="'+flame+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[gg]---------------------------------------------\\                              
-        if (private_chat.includes(":gg:")){chat = private_chat.replace(':gg:', '<img src="'+gg+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":gg:")){chat = public_chat.replace(':gg:', '<img src="'+gg+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":gg:")){chat = private_chat.replace(':gg:', '<img src="'+gg+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":gg:")){chat = public_chat.replace  (':gg:', '<img src="'+gg+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[clappincheeks]---------------------------------------------\\                                     
-        if (private_chat.includes(":clappincheeks:")){chat = private_chat.replace(':clappincheeks:', '<img src="'+clappin_cheeks+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":clappincheeks:")){chat = public_chat.replace(':clappincheeks:', '<img src="'+clappin_cheeks+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":clappincheeks:")){chat = private_chat.replace(':clappincheeks:', '<img src="'+clappin_cheeks+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":clappincheeks:")){chat = public_chat.replace  (':clappincheeks:', '<img src="'+clappin_cheeks+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[dababy]---------------------------------------------\\
-        if (private_chat.includes(":dababy:")){chat = private_chat.replace(':dababy:', '<img src="'+dababy+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":dababy:")){chat = public_chat.replace(':dababy:', '<img src="'+dababy+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":dababy:")){chat = private_chat.replace(':dababy:', '<img src="'+dababy+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":dababy:")){chat = public_chat.replace  (':dababy:', '<img src="'+dababy+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[peaceout]---------------------------------------------\\      
-        if (private_chat.includes(":peaceout:")){chat = private_chat.replace(':peaceout:', '<img src="'+peaceout+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":peaceout:")){chat = public_chat.replace(':peaceout:', '<img src="'+peaceout+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":peaceout:")){chat = private_chat.replace(':peaceout:', '<img src="'+peaceout+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":peaceout:")){chat = public_chat.replace  (':peaceout:', '<img src="'+peaceout+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[wut]---------------------------------------------\\      
-        if (private_chat.includes(":wut:")){chat = private_chat.replace(':wut:', '<img src="'+wut+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":wut:")){chat = public_chat.replace(':wut:', '<img src="'+wut+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":wut:")){chat = private_chat.replace(':wut:', '<img src="'+wut+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":wut:")){chat = public_chat.replace  (':wut:', '<img src="'+wut+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[ez]---------------------------------------------\\     
-        if (private_chat.includes(":ez:")){chat = private_chat.replace(':ez:', '<img src="'+ez+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":ez:")){chat = public_chat.replace(':ez:', '<img src="'+ez+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":ez:")){chat = private_chat.replace(':ez:', '<img src="'+ez+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":ez:")){chat = public_chat.replace  (':ez:', '<img src="'+ez+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[twerk]---------------------------------------------\\      
-        if (private_chat.includes(":twerk:")){chat = private_chat.replace(':twerk:', '<img src="'+twerk+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":twerk:")){chat = public_chat.replace(':twerk:', '<img src="'+twerk+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":twerk:")){chat = private_chat.replace(':twerk:', '<img src="'+twerk+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":twerk:")){chat = public_chat.replace  (':twerk:', '<img src="'+twerk+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[stare]---------------------------------------------\\    
-        if (private_chat.includes(":stare:")){chat = private_chat.replace(':stare:', '<img src="'+stare+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":stare:")){chat = public_chat.replace(':stare:', '<img src="'+stare+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":stare:")){chat = private_chat.replace(':stare:', '<img src="'+stare+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":stare:")){chat = public_chat.replace  (':stare:', '<img src="'+stare+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[hakcan]---------------------------------------------\\      
-        if (private_chat.includes(":hakcan:")){chat = private_chat.replace(':hakcan:', '<img src="'+hakcan+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":hakcan:")){chat = public_chat.replace(':hakcan:', '<img src="'+hakcan+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":hakcan:")){chat = private_chat.replace(':hakcan:', '<img src="'+hakcan+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":hakcan:")){chat = public_chat.replace  (':hakcan:', '<img src="'+hakcan+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[thonk]---------------------------------------------\\     
-        if (private_chat.includes(":thonk:")){chat = private_chat.replace(':thonk:', '<img src="'+thonk+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":thonk:")){chat = public_chat.replace(':thonk:', '<img src="'+thonk+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":thonk:")){chat = private_chat.replace(':thonk:', '<img src="'+thonk+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":thonk:")){chat = public_chat.replace  (':thonk:', '<img src="'+thonk+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[awana]---------------------------------------------\\   
-        if (private_chat.includes(":awana:")){chat = private_chat.replace(':awana:', '<img src="'+awana+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":awana:")){chat = public_chat.replace(':awana:', '<img src="'+awana+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":awana:")){chat = private_chat.replace(':awana:', '<img src="'+awana+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":awana:")){chat = public_chat.replace  (':awana:', '<img src="'+awana+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[clapp]---------------------------------------------\\
-        if (private_chat.includes(":clapp:")){chat = private_chat.replace(':clapp:', '<img src="'+clapp+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":clapp:")){chat = public_chat.replace(':clapp:', '<img src="'+clapp+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":clapp:")){chat = private_chat.replace(':clapp:', '<img src="'+clapp+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":clapp:")){chat = public_chat.replace  (':clapp:', '<img src="'+clapp+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[amongus]---------------------------------------------\\
-        if (private_chat.includes(":amongus:")){chat = private_chat.replace(':amongus:', '<img src="'+amongus+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":amongus:")){chat = public_chat.replace(':amongus:', '<img src="'+amongus+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":amongus:")){chat = private_chat.replace(':amongus:', '<img src="'+amongus+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":amongus:")){chat = public_chat.replace  (':amongus:', '<img src="'+amongus+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[vibing]---------------------------------------------\\
-        if (private_chat.includes(":vibing:")){chat = private_chat.replace(':vibing:', '<img src="'+vibing+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":vibing:")){chat = public_chat.replace(':vibing:', '<img src="'+vibing+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":vibing:")){chat = private_chat.replace(':vibing:', '<img src="'+vibing+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":vibing:")){chat = public_chat.replace  (':vibing:', '<img src="'+vibing+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[eri]---------------------------------------------\\
-        if (private_chat.includes(":eri:")){chat = private_chat.replace(':eri:', '<img src="'+eri+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":eri:")){chat = public_chat.replace(':eri:', '<img src="'+eri+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":eri:")){chat = private_chat.replace(':eri:', '<img src="'+eri+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":eri:")){chat = public_chat.replace  (':eri:', '<img src="'+eri+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[sheeesh]---------------------------------------------\\           
-        if (private_chat.includes(":sheeesh:")){chat = private_chat.replace(':sheeesh:', '<img src="'+sheeesh+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":sheeesh:")){chat = public_chat.replace(':sheeesh:', '<img src="'+sheeesh+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":sheeesh:")){chat = private_chat.replace(':sheeesh:', '<img src="'+sheeesh+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":sheeesh:")){chat = public_chat.replace  (':sheeesh:', '<img src="'+sheeesh+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[mcdonalds]---------------------------------------------\\
-        if (private_chat.includes(":mcdonalds:")){chat = private_chat.replace(':mcdonalds:', '<img src="'+mcdonalds+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":mcdonalds:")){chat = public_chat.replace(':mcdonalds:', '<img src="'+mcdonalds+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":mcdonalds:")){chat = private_chat.replace(':mcdonalds:', '<img src="'+mcdonalds+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":mcdonalds:")){chat = public_chat.replace  (':mcdonalds:', '<img src="'+mcdonalds+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[caught4k]---------------------------------------------\\           
-        if (private_chat.includes(":caught4k:")){chat = private_chat.replace(':caught4k:', '<img src="'+fourK+'" width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":caught4k:")){chat = public_chat.replace(':caught4k:', '<img src="'+fourK+'" width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":caught4k:")){chat = private_chat.replace(':caught4k:', '<img src="'+fourK+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":caught4k:")){chat = public_chat.replace  (':caught4k:', '<img src="'+fourK+'" width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[4wierd]---------------------------------------------\\
-        if (private_chat.includes(":4weird:")){chat = private_chat.replace(':4weird:', '<img src="'+fourweird+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":4weird:")){chat = public_chat.replace(':4weird:', '<img src="'+fourweird+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":4weird:")){chat = private_chat.replace(':4weird:', '<img src="'+fourweird+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":4weird:")){chat = public_chat.replace  (':4weird:', '<img src="'+fourweird+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[kekw]---------------------------------------------\\
-        if (private_chat.includes(":kekw:")){chat = private_chat.replace(':kekw:', '<img src="'+kekw+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":kekw:")){chat = public_chat.replace(':kekw:', '<img src="'+kekw+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":kekw:")){chat = private_chat.replace(':kekw:', '<img src="'+kekw+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":kekw:")){chat = public_chat.replace  (':kekw:', '<img src="'+kekw+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[kekyou]---------------------------------------------\\
-        if (private_chat.includes(":kekyou:")){chat = private_chat.replace(':kekyou:', '<img src="'+kekyou+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":kekyou:")){chat = public_chat.replace(':kekyou:', '<img src="'+kekyou+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":kekyou:")){chat = private_chat.replace(':kekyou:', '<img src="'+kekyou+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":kekyou:")){chat = public_chat.replace  (':kekyou:', '<img src="'+kekyou+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[feelsgaymen]---------------------------------------------\\
-        if (private_chat.includes(":feelsgaymen:")){chat = private_chat.replace(':feelsgaymen:', '<img src="'+feelsgaymen+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":feelsgaymen:")){chat = public_chat.replace(':feelsgaymen:', '<img src="'+feelsgaymen+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":feelsgaymen:")){chat = private_chat.replace(':feelsgaymen:', '<img src="'+feelsgaymen+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":feelsgaymen:")){chat = public_chat.replace  (':feelsgaymen:', '<img src="'+feelsgaymen+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[shinekiss]---------------------------------------------\\
-        if (private_chat.includes(":shinekiss:")){chat = private_chat.replace(':shinekiss:', '<img src="'+shinekiss+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":shinekiss:")){chat = public_chat.replace(':shinekiss:', '<img src="'+shinekiss+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":shinekiss:")){chat = private_chat.replace(':shinekiss:', '<img src="'+shinekiss+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":shinekiss:")){chat = public_chat.replace  (':shinekiss:', '<img src="'+shinekiss+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[kissy]---------------------------------------------\\
-        if (private_chat.includes(":kissy:")){chat = private_chat.replace(':kissy:', '<img src="'+kissy+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":kissy:")){chat = public_chat.replace(':kissy:', '<img src="'+kissy+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":kissy:")){chat = private_chat.replace(':kissy:', '<img src="'+kissy+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":kissy:")){chat = public_chat.replace  (':kissy:', '<img src="'+kissy+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------------------------------------[egirlkiss]---------------------------------------------\\
-        if (private_chat.includes(":egirlkiss:")){chat = private_chat.replace(':egirlkiss:', '<img src="'+egirlkiss+'"width="20" height="20"></img>');private.innerHTML = chat;}
-        if (public_chat.includes(":egirlkiss:")){chat = public_chat.replace(':egirlkiss:', '<img src="'+egirlkiss+'"width="20" height="20"></img>');public.innerHTML = chat;}
+        if (private_chat.includes(":egirlkiss:")){chat = private_chat.replace(':egirlkiss:', '<img src="'+egirlkiss+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
+        if (public_chat.includes(":egirlkiss:")){chat = public_chat.replace  (':egirlkiss:', '<img src="'+egirlkiss+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
 //---------------Error shit---------------//
     } catch (error) {
         if (error.name.toString() == "TypeError") {
@@ -161,10 +163,10 @@ document.getElementById("huds").appendChild(emoji_list_a)
 function emoji_list_show(){
     if (document.getElementById('emoji_tab_list').style.display === 'none'){
         document.getElementById('emoji_tab_list').style.display = 'grid'
-        document.getElementById('emoji_tab_button').style.left = "466px";
+        document.getElementById('emoji_tab_button').style.left = "495px";
     }else {
         document.getElementById('emoji_tab_list').style.display = 'none'
-        document.getElementById('emoji_tab_button').style.left = "235px";
+        document.getElementById('emoji_tab_button').style.left = "270px";
     }
 }
 // '<img class="emoji_text" src="'+emoji+'" width="35" height="35"></img>'+ //
@@ -214,7 +216,7 @@ emoji_list.children[3].addEventListener('click', function(){textbox = textbar.va
 emoji_list.children[4].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':shakyshaky:';     textbar.value = textbox})
 emoji_list.children[5].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':ban:';            textbar.value = textbox})
 emoji_list.children[6].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':joyabel:';        textbar.value = textbox})
-emoji_list.children[7].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':doggo:';      textbar.value = textbox})
+emoji_list.children[7].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':doggo:';          textbar.value = textbox})
 emoji_list.children[8].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':madblob:';        textbar.value = textbox})
 emoji_list.children[9].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':flame:';          textbar.value = textbox})
 emoji_list.children[10].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':gg:';            textbar.value = textbox})
