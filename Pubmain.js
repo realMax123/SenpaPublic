@@ -1,7 +1,7 @@
-//Setting up default values for css of page
 (function() {
     let style = 
 `<style>
+
 .loop-holder {
     display: flex;
     white-space: nowrap;
@@ -25,19 +25,27 @@
         transform: translate3d(-100%, 0, 0)
     }
 }
+#new-panel .partition.left, #settings-panel .partition.left canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+
 #huds #emoji_tab_button {
     position: fixed;
     bottom: 50px;
-    left: 235px;
+    left: 270px;
     width: 45px;
     height: 45px;
 }
 #huds #emoji_tab_list {
     width: 225px;
-    height: 283px;
+    height: 342px;
     position: fixed;
     bottom: 50px;
-    left: 238px;
+    left: 270px;
     transform-origin: left;
     background: rgba(10,10,10,.3);
     display: grid;
@@ -87,7 +95,6 @@
 </style>`;
     document.head.insertAdjacentHTML("beforeend", style);
 })();
-
 
 //▼▼ Removing useless shit / setting default values for mod / adding small details ▼▼
 document.getElementsByClassName("advertisement-informer")[0].remove();
