@@ -1,4 +1,4 @@
-        //---------------------------Emoji links-----------------------------\\
+    //---------------------------Emoji links-----------------------------\\
     var kitty =         'https://emoji.gg/assets/emoji/9553-cat-smile.png'
     var cock =          'https://c.tenor.com/9QMTL4kgC5UAAAAC/dead-emoji.gif'
     var sad_cat =       'https://emoji.discord.st/emojis/1685a79a-23f8-4307-9487-a1a5cb59302f.png'
