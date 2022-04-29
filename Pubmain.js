@@ -292,11 +292,11 @@ setInterval(async function() {
             document.getElementById("ad-button-continue").click()
             await sleep(150);
             document.getElementById("endGame").style = ''
+        }
         if (nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
         if (nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');} 
         if (nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
         if (nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');}
-        }
     } catch (e) {
         if (e.name.toString() == "TypeError") {
         }}
