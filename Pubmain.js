@@ -282,25 +282,31 @@ window.onload = function(){
 // ▼▼Setting up sleep function ▼▼
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 
-// ▼▼Creating auto remove endgame screen [deth screen] and adding devs to chat ▼▼
+// ▼▼Creating auto remove endgame screen [deth screen] ▼▼
 setInterval(async function() {
     try {
         var end_game = document.getElementById("endGame")
-        var nick_all = document.getElementById("chat-all-room")
-        var nick_private = document.getElementById("chat-party-room")
         if(end_game.getAttribute('style').includes("block")) {
             document.getElementById("ad-button-continue").click()
             await sleep(150);
             document.getElementById("endGame").style = ''
         }
-        if (nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
-        if (nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {nick_all.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');} 
-        if (nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
-        if (nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {nick_private.lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');}
-    } catch (e) {
+    }catch (e) {
         if (e.name.toString() == "TypeError") {
         }}
 },);
+// ▼▼Give Veky and shine dev [DEV] ▼▼
+setInterval(function() {
+    try{
+        if (document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
+        if (document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');} 
+        if (document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
+        if (document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Vekk :')) {document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Vekk :');}
+    } catch (error) {
+        if (error.name.toString() == "TypeError") {}
+    }
+},);
+
 function change_primary_color(){
     main_color = main_primary_color.value
     let style = 
