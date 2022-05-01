@@ -25,14 +25,21 @@
         transform: translate3d(-100%, 0, 0)
     }
 }
+[role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
+    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25, auto !important;
+}
+* {
+    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25 , auto !important;
+}
+[id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
+    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25 , auto !important;
+}
 #new-panel .partition.left, #settings-panel .partition.left canvas {
     position: absolute;
     top: 0;
     left: 0;
     background-color: black;
 }
-
-
 #huds #emoji_tab_button {
     position: fixed;
     bottom: 50px;
