@@ -350,7 +350,6 @@ setInterval(function(){
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
 }},);
-
 function change_primary_color(){
     main_color = main_primary_color.value
     let style = 
