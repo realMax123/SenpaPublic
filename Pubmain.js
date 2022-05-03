@@ -350,7 +350,7 @@ setInterval(function(){
         if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){
             if (chat_box.value.includes('𝅹')){}else{
                 if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
-        if (ingamediscord.innerHTML == 'isabella#8718' && ingamename.value.includes('Isabella')){
+        if (ingamediscord.innerHTML == 'isabellaa#8718' && ingamename.value.includes('Isabella')){
             if (chat_box.value.includes('𝅸')){}else{
                 if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
         if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){
