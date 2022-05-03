@@ -302,7 +302,6 @@ setInterval(async function() {
         if (e.name.toString() == "TypeError") {
         }}
 },);
-
 //▼▼ Give Veky and shine dev [DEV] ▼▼
 setInterval(function() {
     try{
@@ -314,8 +313,8 @@ setInterval(function() {
         if (error.name.toString() == "TypeError") {}
     }
 },);
-
 //▼▼ Give special roles to users ▼▼
+//  https://invisible-characters.com
 setInterval(function(){
     try{
         var nickname = []
@@ -352,6 +351,9 @@ setInterval(function(){
             if (chat_box.value.includes('𝅹')){}else{
                 if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
         if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){
+            if (chat_box.value.includes('𝅸')){}else{
+                if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
+        if (ingamediscord.innerHTML == 'isabella<3#8718' && ingamename.value.includes('Isabella')){
             if (chat_box.value.includes('𝅸')){}else{
                 if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
 
