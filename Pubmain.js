@@ -339,6 +339,10 @@ setInterval(function(){
             if (public_chat.includes('𝅹')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}
         }
         //Vip+ --
+        if (party_name.innerHTML.includes('[VIP+]') || public_name.innerHTML.includes('[VIP+]')){}else{
+            if (private_chat.includes('𝅸')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
+            if (public_chat.includes('𝅸')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
+        }
         
         //Discord ids / names
         if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){
@@ -347,7 +351,9 @@ setInterval(function(){
         if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){
             if (chat_box.value.includes('𝅹')){}else{
                 if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
-
+        if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){
+            if (chat_box.value.includes('𝅸')){}else{
+                if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
 
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
