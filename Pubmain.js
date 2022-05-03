@@ -313,6 +313,43 @@ setInterval(function() {
         if (error.name.toString() == "TypeError") {}
     }
 },);
+//Give roles to pple
+setInterval(function(){
+    try{
+        var party_only = document.getElementById("chat-party-room")
+        var public_only = document.getElementById("chat-all-room")
+        var party_name = party_only.lastElementChild.getElementsByClassName("nick")[0]
+        var public_name = public_only.lastElementChild.getElementsByClassName("nick")[0]
+        var private_chat = party_only.lastElementChild.getElementsByClassName("message")[0].innerHTML
+        var public_chat = public_only.lastElementChild.getElementsByClassName("message")[0].innerHTML
+        var ingamename = document.getElementById('name')
+        var chat_box = document.getElementById('chat-box')
+        var ingamediscord = document.getElementById('pf-name')
+        //Devs --
+        if (party_name.innerHTML.includes('[DEV]') || public_name.innerHTML.includes('[DEV]')){}else{
+            if (private_chat.includes('𝅺')){party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+ingamename.value+':'}
+            if (public_chat.includes('𝅺')){public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+ingamename.value+':'}
+        } 
+        //Special --
+        if (party_name.innerHTML.includes('[GOAT]') || public_name.innerHTML.includes('[GOAT]')){}else{
+            if (private_chat.includes('𝅹')){party_name.innerHTML = '<span style="color: red">[GOAT] </span>'+ingamename.value+':'}
+            if (public_chat.includes('𝅹')){public_name.innerHTML = '<span style="color: red">[GOAT] </span>'+ingamename.value+':'}
+        }
+        //Vip+ --
+        
+        //Discord ids / names
+        if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){
+            if (chat_box.value.includes('𝅺')){}else{
+                if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}}}
+        if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){
+            if (chat_box.value.includes('𝅹')){}else{
+                if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
+
+
+    } catch (error) {
+        if (error.name.toString() == "TypeError") {}
+}},);
+
 
 function change_primary_color(){
     main_color = main_primary_color.value
