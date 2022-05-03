@@ -286,10 +286,10 @@ window.onload = function(){
     chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){toggle_button[33].className = 'toggle-btn active';} else{toggle_button[33].className = 'toggle-btn'}})
 }
 
-// ▼▼Setting up sleep function ▼▼
+//▼▼ Setting up sleep function ▼▼
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 
-// ▼▼Creating auto remove endgame screen [deth screen] ▼▼
+//▼▼ Creating auto remove endgame screen [deth screen] ▼▼
 setInterval(async function() {
     try {
         var end_game = document.getElementById("endGame")
@@ -302,7 +302,8 @@ setInterval(async function() {
         if (e.name.toString() == "TypeError") {
         }}
 },);
-// ▼▼Give Veky and shine dev [DEV] ▼▼
+
+//▼▼ Give Veky and shine dev [DEV] ▼▼
 setInterval(function() {
     try{
         if (document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML === ('<span style="color: yellow">[VIP]</span> Shine :')) {document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0].innerHTML = ('<span style="color: blue">[DEV]</span> Shine :');}
@@ -313,7 +314,8 @@ setInterval(function() {
         if (error.name.toString() == "TypeError") {}
     }
 },);
-//Add special roles
+
+//▼▼ Give special roles to users ▼▼
 setInterval(function(){
     try{
         var nickname = []
@@ -350,6 +352,8 @@ setInterval(function(){
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
 }},);
+
+// ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
     main_color = main_primary_color.value
     let style = 
