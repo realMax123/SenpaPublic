@@ -116,6 +116,7 @@ document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ff
 document.getElementById('chat-room').style['height'] = '360px'
 document.getElementById('chat-room').style['width'] = '260px'
 
+
 //▼▼ Creating Extension tab in settings ▼▼
 var partition_left = document.getElementsByClassName("partition left")[0]
 var partition_right = document.getElementsByClassName("partition right")[0]
@@ -128,14 +129,6 @@ extension.appendChild(document.createElement('div'))
 extension.appendChild(document.createElement('div'))
 extension.children[0].outerHTML = '<div class="tab-row"></div>'
 extension.children[1].outerHTML = '<div container-name="settings-list-extension"></div>'
-
-//▼▼ Creating Menu and Chat in extended mod settings ▼▼
-var tab_row = extension.children[0]
-var settings_list = extension.children[1]
-tab_row.appendChild(document.createElement('div'))
-tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
-settings_list.appendChild(document.createElement('div'))
-settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active="true">'
 
 //▼▼ Adding click function / can click and open up mod menu in settings ▼▼
 var tab = document.getElementsByClassName("tab")
@@ -154,19 +147,48 @@ function button_tab(){
     list[4].setAttribute("active", 4)
 }
 
+//▼▼ Creating Tablist in extended mod settings ▼▼
+var tab_row = extension.children[0]
+var settings_list = extension.children[1]
+tab_row.appendChild(document.createElement('div'))
+tab_row.appendChild(document.createElement('div'))
+tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
+tab_row.children[0].addEventListener("click", button_menu)
+//tab_row.children[1].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="cursor">Cursor</div>'
+//tab_row.children[1].addEventListener("click", button_cursor)
+settings_list.appendChild(document.createElement('div'))
+settings_list.appendChild(document.createElement('div'))
+settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active>'
+//settings_list.children[1].outerHTML = '<div class="sub-list" data-name="cursor">'
+
+//▼▼ Functions to make tab list / buttons work ▼▼
+function button_menu(){
+    tab_row.children[0].setAttribute("active", 4)
+    tab_row.children[1].removeAttribute("active")
+
+    settings_list.children[0].setAttribute("active", 4)
+    settings_list.children[1].removeAttribute("active")
+}
+//function button_cursor(){
+//    tab_row.children[0].removeAttribute("active")
+//    tab_row.children[1].setAttribute("active", 4)
+//
+//    settings_list.children[0].removeAttribute("active")
+//    settings_list.children[1].setAttribute("active", 4)
+//}
 //▼▼ Adding user settings to [Menu] tab ▼▼
-var extension_menu = document.getElementsByClassName('sub-list')[16]
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.appendChild(document.createElement('div'))
-extension_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_bg_color"><div class="name">Menu background color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-extension_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border glow color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-extension_menu.children[2].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-extension_menu.children[3].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
+var ext_menu = document.getElementsByClassName('sub-list')[16]
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.appendChild(document.createElement('div'))
+ext_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_bg_color"><div class="name">Menu background color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border glow color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[2].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[3].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
 var logo_color = document.getElementsByClassName("dropdown-list")[8]
 var logo = document.getElementsByClassName("selected")[8]
 logo_color.appendChild(document.createElement('div')); logo_color.children[0].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Red</div>';          logo_color.children[0].addEventListener('click', function(){logo.textContent = 'Red',       change_logo_color(); save_logo_color();}); 
@@ -179,12 +201,33 @@ logo_color.appendChild(document.createElement('div')); logo_color.children[6].ou
 logo_color.appendChild(document.createElement('div')); logo_color.children[7].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Dark Blue</div>';    logo_color.children[7].addEventListener('click', function(){logo.textContent = 'Dark Blue', change_logo_color(); save_logo_color();});
 logo_color.appendChild(document.createElement('div')); logo_color.children[8].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Purple</div>';       logo_color.children[8].addEventListener('click', function(){logo.textContent = 'Purple',    change_logo_color(); save_logo_color();});
 logo_color.appendChild(document.createElement('div')); logo_color.children[9].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Pink</div>';         logo_color.children[9].addEventListener('click', function(){logo.textContent = 'Pink',      change_logo_color(); save_logo_color();});
-extension_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-extension_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-extension_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text" placeholder="Must be google link | https:// |"></div>'
-extension_menu.children[6].style.display = "none"
+ext_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+ext_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+ext_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text" placeholder="Must be google link | https:// |"></div>'
+ext_menu.children[6].style.display = "none"
+//▼▼ Adding user settings to [Cursor] tab ▼▼
 
-//Creating def variables [Menu]
+//var ext_cursor = document.getElementsByClassName('sub-list')[17]
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.appendChild(document.createElement('div'))
+//ext_cursor.children[0].outerHTML = '<div class="setting opt-toggle" id="mouse_0"><div class="name">Use def mouse cursor</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+//ext_cursor.children[1].outerHTML = '<div class="setting opt-toggle" id="mouse_1"><div class="name">Cursor 1</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+//ext_cursor.children[2].outerHTML = '<div class="setting opt-toggle" id="mouse_2"><div class="name">Cursor 2</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+//ext_cursor.children[3].outerHTML = '<div class="setting opt-toggle" id="mouse_3"><div class="name">Cursor 3</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+//ext_cursor.children[4].outerHTML = '<div class="setting opt-toggle" id="mouse_4"><div class="name">Cursor 4</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+//ext_cursor.children[5].outerHTML = '<div class="setting opt-toggle" id="mouse_5"><div class="name">Costum</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+
+//Creating def variables
+var menu_background_color = document.getElementsByClassName("text minicolors-input")[16]
+var menu_border_color = document.getElementsByClassName("text minicolors-input")[17]
+var main_primary_color = document.getElementsByClassName("text minicolors-input")[18]
+var background_image = document.getElementsByClassName("text")[69]
+var toggle_button = document.getElementsByClassName("toggle-btn")
+var main_menu = document.getElementsByClassName("main-menu")[0]
 var link_red =      '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
 var link_orange =   '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">'
 var link_yellow =   '<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">'
@@ -195,22 +238,28 @@ var link_blue =     '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">'
 var link_darkblue = '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">'
 var link_purple =   '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">'
 var link_pink =     '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">'
-var menu_background_color = document.getElementsByClassName("text minicolors-input")[16]
-var menu_border_color = document.getElementsByClassName("text minicolors-input")[17]
-var main_primary_color = document.getElementsByClassName("text minicolors-input")[18]
-var background_image = document.getElementsByClassName("text")[69]
-var toggle_button = document.getElementsByClassName("toggle-btn")
-var main_menu = document.getElementsByClassName("main-menu")[0]
+//var mouse_0 = document.getElementById('mouse_0')
+//var mouse_1 = document.getElementById('mouse_1')
+//var mouse_2 = document.getElementById('mouse_2')
+//var mouse_3 = document.getElementById('mouse_3')
+//var mouse_4 = document.getElementById('mouse_4')
+//var mouse_5 = document.getElementById('mouse_5')
 
-//▼▼ Addind event listeners for changing, saving user data [Menu] ▼▼
-document.getElementById('xp_bar').children[1].addEventListener("click", use_xp_bar)
-document.getElementById('use_menu_background').children[1].addEventListener("click", use_background_button)
+//▼▼ Addind event listeners for changing, saving user data ▼▼
+document.getElementById('xp_bar').children[1].addEventListener('click', use_xp_bar)
+document.getElementById('use_menu_background').children[1].addEventListener('click', use_background_button)
 menu_background_color.addEventListener('change', function(){change_background_color(); save_background_color();})
 menu_border_color.addEventListener('change', function(){change_border_color(); save_background_border();})
 main_primary_color.addEventListener('change', function(){change_primary_color(); save_main_primary_color();})
 background_image.addEventListener('change', save_background_link)
+//mouse_0.children[1].addEventListener('click', mouse_buttons())
+//mouse_1.children[1].addEventListener('click', mouse_buttons())
+//mouse_2.children[1].addEventListener('click', mouse_buttons())
+//mouse_3.children[1].addEventListener('click', mouse_buttons())
+//mouse_4.children[1].addEventListener('click', mouse_buttons())
+//mouse_5.children[1].addEventListener('click', mouse_buttons())
 
-//▼▼ Creating functions for settings [Menu] ▼▼
+//▼▼ Creating functions for settings ▼▼
 function change_background_color(){main_menu.style.setProperty("background", menu_background_color.value)}
 function change_border_color(){main_menu.style.boxShadow = '0 0 30px'+menu_border_color.value}
 function use_xp_bar(){
@@ -238,7 +287,7 @@ function change_logo_color(){
 
 setInterval(function() {
     var bg_link = document.getElementById("background_link_placeholder")
-    try{
+    try{        
         if (toggle_button[33].className === 'toggle-btn active'){
             bg_link.style.display = "block"
             main_menu.style.setProperty("background-image", "url("+background_image.value+")")
@@ -255,7 +304,12 @@ setInterval(function() {
         if (error.name.toString() == "TypeError") {}
     }
 },100);
-//▼▼ Saving all user data settings to google client [cache] for [Menu] ▼▼ 
+
+
+//function mouse_buttons(){}
+
+
+//▼▼ Saving all user data settings to google client [cache] ▼▼ 
 function save_background_color()    {chrome.storage.sync.set({'bg_color': menu_background_color.value},function(){console.log(senpa_log_error)})}
 function save_background_border()   {chrome.storage.sync.set({'border_color': menu_border_color.value},function(){console.log(senpa_log_error)})}
 function save_main_primary_color()  {chrome.storage.sync.set({'main_color': main_primary_color.value},function(){console.log(senpa_log_error)})}
@@ -264,7 +318,7 @@ function save_xp_button()           {chrome.storage.sync.set({'user_xp_button': 
 function save_background_button()   {chrome.storage.sync.set({'use_menu_bg_button': toggle_button[33].className},function(){console.log(senpa_log_error)})}
 function save_background_link()     {chrome.storage.sync.set({'background_link': background_image.value},function(){console.log(senpa_log_error)})}
 
-//▼▼ Load user data from google client [cache] for [Menu] ▼▼
+//▼▼ Load user data from google client [cache] ▼▼
 window.onload = function(){
     console.log('殺ExtendedSenpaす: Loading data')
     chrome.storage.sync.get(['senpa_logo_color'], function(data){
@@ -289,7 +343,7 @@ window.onload = function(){
 //▼▼ Setting up sleep function ▼▼
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 
-//▼▼ Creating auto remove endgame screen [deth screen] ▼▼
+//▼▼ Auto remove endgame screen [deth screen] ▼▼
 setInterval(async function() {
     try {
         var end_game = document.getElementById("endGame")
@@ -302,6 +356,7 @@ setInterval(async function() {
         if (e.name.toString() == "TypeError") {
         }}
 },);
+
 //▼▼ Give Veky and shine dev [DEV] ▼▼
 setInterval(function() {
     try{
@@ -313,6 +368,7 @@ setInterval(function() {
         if (error.name.toString() == "TypeError") {}
     }
 },);
+
 //▼▼ Give special roles to users ▼▼
 //  https://invisible-characters.com
 setInterval(function(){
@@ -329,9 +385,9 @@ setInterval(function(){
         var ingamediscord = document.getElementById('pf-name')
         //Devs --
         if (party_name.innerHTML.includes('[DEV]') || public_name.innerHTML.includes('[DEV]')){}else{
-            if (private_chat.includes('𝅺')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''}
-            if (public_chat.includes('𝅺')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''}
-        } 
+            if (private_chat.includes('𝅺')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; party_name.setAttribute('style','color: red') }
+            if (public_chat.includes('𝅺')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; public_name.setAttribute('style','color: red')}
+        }
         //Special --
         if (party_name.innerHTML.includes('[GOAT]') || public_name.innerHTML.includes('[GOAT]')){}else{
             if (private_chat.includes('𝅹')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}
@@ -344,22 +400,17 @@ setInterval(function(){
         }
         
         //Discord ids / names
-        if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){
-            if (chat_box.value.includes('𝅺')){}else{
-                if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}}}
-        if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){
-            if (chat_box.value.includes('𝅹')){}else{
-                if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
-        if (ingamediscord.innerHTML == 'isabellaa#8718' && ingamename.value.includes('isabella')){
-            if (chat_box.value.includes('𝅸')){}else{
-                if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
-        if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){
-            if (chat_box.value.includes('𝅸')){}else{
-                if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
+        //Devs --
+        if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){               if (chat_box.value.includes('𝅺')){}else{if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}}}
+        //Special --
+        if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){ if (chat_box.value.includes('𝅹')){}else{if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
+        //Vip+ --
+        if (ingamediscord.innerHTML == 'isabella#8718' && ingamename.value.includes('isabella')){       if (chat_box.value.includes('𝅸')){}else{if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
+        if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){            if (chat_box.value.includes('𝅸')){}else{if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
 
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
-}},);
+}},1);
 
 // ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
@@ -368,6 +419,12 @@ function change_primary_color(){
 `<style>
     .loop-holder__text {
     color: `+main_color+`;
+}
+#huds .minimap-hud {
+    border: 2px solid `+main_color+`;
+}
+#huds .timeleft {
+    border: 2px solid `+main_color+`;
 }
 #account-panel button:hover {
     background: `+main_color+`;
