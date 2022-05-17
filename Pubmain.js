@@ -25,6 +25,12 @@
         transform: translate3d(-100%, 0, 0)
     }
 }
+#new-panel .partition.left, #settings-panel .partition.left canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
 [role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
     cursor: url(https://i.imgur.com/whxjaFd.png) 25 25, auto !important;
 }
@@ -34,11 +40,9 @@
 [id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
     cursor: url(https://i.imgur.com/whxjaFd.png) 25 25 , auto !important;
 }
-#new-panel .partition.left, #settings-panel .partition.left canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
+#new-panel .partition.right .setting, #settings-panel .partition.right .setting {
+    padding: 16px;
+    transition: all .5s;
 }
 #huds #emoji_tab_button {
     position: fixed;
@@ -59,6 +63,12 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     grid-auto-rows: 36px;
+}
+#huds .leaderboard-hud #leaderboard-positions {
+    font-weight: 600;
+}
+#huds #chat-room div {
+    font-weight: 600;
 }
 .emoji_text:hover {
     transform: scale(1.3);
