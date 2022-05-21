@@ -380,7 +380,6 @@ setInterval(function() {
 },);
 
 //▼▼ Give special roles to users ▼▼
-//  https://invisible-characters.com
 setInterval(function(){
     try{
         var nickname = []
@@ -405,6 +404,8 @@ setInterval(function(){
         }
         //Vip+ --
         if (party_name.innerHTML.includes('[VIP+]') || public_name.innerHTML.includes('[VIP+]')){}else{
+            if (private_chat.includes('AppoX') && private_chat.includes('𝅸')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; party_name.setAttribute('style','color: #164DEE')}
+            if (public_chat.includes('AppoX') && public_chat.includes('𝅸')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; public_name.setAttribute('style','color: #164DEE')}
             if (private_chat.includes('𝅸')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
             if (public_chat.includes('𝅸')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
         }
@@ -421,6 +422,7 @@ setInterval(function(){
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
 }},1);
+
 
 // ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
