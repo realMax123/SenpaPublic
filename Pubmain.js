@@ -393,23 +393,28 @@ setInterval(function(){
         var chat_box = document.getElementById('chat-box')
         var ingamediscord = document.getElementById('pf-name')
         //Devs --
-        if (party_name.innerHTML.includes('[DEV]') || public_name.innerHTML.includes('[DEV]')){}else{
-            if (private_chat.includes('𝅺')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; party_name.setAttribute('style','color: red') }
-            if (public_chat.includes('𝅺')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; public_name.setAttribute('style','color: red')}
-        }
+        if (party_name.innerHTML.includes('[DEV]')){}else{
+            if (private_chat.includes('𝅺')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; party_name.setAttribute('style','color: red')}}
+        if (public_name.innerHTML.includes('[DEV]')){}else{
+            if (public_chat.includes('𝅺')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; public_name.setAttribute('style','color: red')}}
+
         //Special --
-        if (party_name.innerHTML.includes('[GOAT]') || public_name.innerHTML.includes('[GOAT]')){}else{
-            if (private_chat.includes('𝅹')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}
-            if (public_chat.includes('𝅹')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}
-        }
+        if (party_name.innerHTML.includes('[GOAT]')){}else{
+            if (private_chat.includes('𝅹')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}}
+        if (public_name.innerHTML.includes('[GOAT]')){}else{
+            if (public_chat.includes('𝅹')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}}
+
         //Vip+ --
-        if (party_name.innerHTML.includes('[VIP+]') || public_name.innerHTML.includes('[VIP+]')){}else{
-            if (private_chat.includes('AppoX') && private_chat.includes('𝅸')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; party_name.setAttribute('style','color: #164DEE')}
-            if (public_chat.includes('AppoX') && public_chat.includes('𝅸')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; public_name.setAttribute('style','color: #164DEE')}
-            if (private_chat.includes('𝅸')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
-            if (public_chat.includes('𝅸')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}
-        }
-        
+        if (party_name.innerHTML.includes('[VIP+]')){}else{
+            if (private_chat.includes('𝅸')){
+                if (party_name.innerHTML = 'AppoX'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; party_name.setAttribute('style','color: #164DEE')}
+                else{nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}}}
+
+        if (public_name.innerHTML.includes('[VIP+]')){}else{
+            if (public_chat.includes('𝅸')){
+                if (public_name.innerHTML = 'AppoX'){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; public_name.setAttribute('style','color: #164DEE')}
+                else{nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}}}
+
         //Discord ids / names
         //Devs --
         if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){               if (chat_box.value.includes('𝅺')){}else{if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}}}
@@ -422,7 +427,6 @@ setInterval(function(){
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
 }},1);
-
 
 // ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
