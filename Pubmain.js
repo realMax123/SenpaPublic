@@ -164,12 +164,9 @@ tab_row.appendChild(document.createElement('div'))
 tab_row.appendChild(document.createElement('div'))
 tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
 tab_row.children[0].addEventListener("click", button_menu)
-//tab_row.children[1].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="cursor">Cursor</div>'
-//tab_row.children[1].addEventListener("click", button_cursor)
 settings_list.appendChild(document.createElement('div'))
 settings_list.appendChild(document.createElement('div'))
 settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active>'
-//settings_list.children[1].outerHTML = '<div class="sub-list" data-name="cursor">'
 
 //▼▼ Functions to make tab list / buttons work ▼▼
 function button_menu(){
@@ -179,13 +176,7 @@ function button_menu(){
     settings_list.children[0].setAttribute("active", 4)
     settings_list.children[1].removeAttribute("active")
 }
-//function button_cursor(){
-//    tab_row.children[0].removeAttribute("active")
-//    tab_row.children[1].setAttribute("active", 4)
-//
-//    settings_list.children[0].removeAttribute("active")
-//    settings_list.children[1].setAttribute("active", 4)
-//}
+
 //▼▼ Adding user settings to [Menu] tab ▼▼
 var ext_menu = document.getElementsByClassName('sub-list')[16]
 ext_menu.appendChild(document.createElement('div'))
@@ -215,21 +206,6 @@ ext_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><d
 ext_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 ext_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text" placeholder="Must be google link | https:// |"></div>'
 ext_menu.children[6].style.display = "none"
-//▼▼ Adding user settings to [Cursor] tab ▼▼
-
-//var ext_cursor = document.getElementsByClassName('sub-list')[17]
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.appendChild(document.createElement('div'))
-//ext_cursor.children[0].outerHTML = '<div class="setting opt-toggle" id="mouse_0"><div class="name">Use def mouse cursor</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-//ext_cursor.children[1].outerHTML = '<div class="setting opt-toggle" id="mouse_1"><div class="name">Cursor 1</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-//ext_cursor.children[2].outerHTML = '<div class="setting opt-toggle" id="mouse_2"><div class="name">Cursor 2</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-//ext_cursor.children[3].outerHTML = '<div class="setting opt-toggle" id="mouse_3"><div class="name">Cursor 3</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-//ext_cursor.children[4].outerHTML = '<div class="setting opt-toggle" id="mouse_4"><div class="name">Cursor 4</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
-//ext_cursor.children[5].outerHTML = '<div class="setting opt-toggle" id="mouse_5"><div class="name">Costum</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 
 //Creating def variables
 var menu_background_color = document.getElementsByClassName("text minicolors-input")[16]
@@ -248,12 +224,6 @@ var link_blue =     '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">'
 var link_darkblue = '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">'
 var link_purple =   '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">'
 var link_pink =     '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">'
-//var mouse_0 = document.getElementById('mouse_0')
-//var mouse_1 = document.getElementById('mouse_1')
-//var mouse_2 = document.getElementById('mouse_2')
-//var mouse_3 = document.getElementById('mouse_3')
-//var mouse_4 = document.getElementById('mouse_4')
-//var mouse_5 = document.getElementById('mouse_5')
 
 //▼▼ Addind event listeners for changing, saving user data ▼▼
 document.getElementById('xp_bar').children[1].addEventListener('click', use_xp_bar)
@@ -262,12 +232,7 @@ menu_background_color.addEventListener('change', function(){change_background_co
 menu_border_color.addEventListener('change', function(){change_border_color(); save_background_border();})
 main_primary_color.addEventListener('change', function(){change_primary_color(); save_main_primary_color();})
 background_image.addEventListener('change', save_background_link)
-//mouse_0.children[1].addEventListener('click', mouse_buttons())
-//mouse_1.children[1].addEventListener('click', mouse_buttons())
-//mouse_2.children[1].addEventListener('click', mouse_buttons())
-//mouse_3.children[1].addEventListener('click', mouse_buttons())
-//mouse_4.children[1].addEventListener('click', mouse_buttons())
-//mouse_5.children[1].addEventListener('click', mouse_buttons())
+
 
 //▼▼ Creating functions for settings ▼▼
 function change_background_color(){main_menu.style.setProperty("background", menu_background_color.value)}
@@ -316,7 +281,7 @@ setInterval(function() {
 },100);
 
 
-//function mouse_buttons(){}
+
 
 
 //▼▼ Saving all user data settings to google client [cache] ▼▼ 
@@ -407,13 +372,13 @@ setInterval(function(){
         //Vip+ --
         if (party_name.innerHTML.includes('[VIP+]')){}else{
             if (private_chat.includes('𝅸')){
-                if (party_name.innerHTML = 'AppoX'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; party_name.setAttribute('style','color: #164DEE')}
-                else{nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}}}
+                if (party_name.innerHTML = 'AppoX'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; party_name.setAttribute('style','color: #3163F7')}
+                else{nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+'';}}}
 
         if (public_name.innerHTML.includes('[VIP+]')){}else{
             if (public_chat.includes('𝅸')){
-                if (public_name.innerHTML = 'AppoX'){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''; public_name.setAttribute('style','color: #164DEE')}
-                else{nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+''}}}
+                if (public_name.innerHTML = 'AppoX'){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; public_name.setAttribute('style','color: #3163F7')}
+                else{nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+'';}}}
 
         //Discord ids / names
         //Devs --
@@ -426,7 +391,7 @@ setInterval(function(){
 
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
-}},1);
+}},);
 
 // ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
