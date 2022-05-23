@@ -373,11 +373,13 @@ setInterval(function(){
         if (party_name.innerHTML.includes('[VIP+]')){}else{
             if (private_chat.includes('𝅸')){
                 if (party_name.innerHTML = 'AppoX'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; party_name.setAttribute('style','color: #3163F7')}
+                if (party_name.innerHTML = 'isabella'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; party_name.setAttribute('style','color: #F131F7')}
                 else{nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+'';}}}
 
         if (public_name.innerHTML.includes('[VIP+]')){}else{
             if (public_chat.includes('𝅸')){
                 if (public_name.innerHTML = 'AppoX'){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; public_name.setAttribute('style','color: #3163F7')}
+                if (public_name.innerHTML = 'isabella'){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; public_name.setAttribute('style','color: #F131F7')}
                 else{nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+'';}}}
 
         //Discord ids / names
@@ -391,7 +393,7 @@ setInterval(function(){
 
     } catch (error) {
         if (error.name.toString() == "TypeError") {}
-}},);
+}},1);
 
 // ▼▼ Set main color for everything ▼▼
 function change_primary_color(){
