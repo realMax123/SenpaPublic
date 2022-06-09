@@ -25,6 +25,32 @@
         transform: translate3d(-100%, 0, 0)
     }
 }
+.legend {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+}
+  
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
 #new-panel .partition.left, #settings-panel .partition.left canvas {
     position: absolute;
     top: 0;
@@ -331,11 +357,6 @@ setInterval(async function() {
         if (e.name.toString() == "TypeError") {
         }}
 },);
-for (let colour = 0; colour < 0x1000000; colour++) { 
-	let hexCode = '#' + colour.toString(16).padStart(6, "0"); 
-	rgb = hexCode 
-} 
-
 //▼▼ Give Veky and shine dev [DEV] ▼▼
 setInterval(function() {
     try{
@@ -377,9 +398,9 @@ setInterval(function(){
     
         //Legend --
         if (party_name.innerHTML.includes('[Legend]')){}else{
-            if (private_chat.includes('𝅷')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: '+ rgb +'">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
+            if (private_chat.includes('𝅷')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue" id="legend">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
         if (public_name.innerHTML.includes('[Legend]')){}else{
-            if (public_chat.includes('𝅷')){nickname = public_name.innerHTML; party_name.innerHTML = '<span style="color: '+ rgb +'">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
+            if (public_chat.includes('𝅷')){nickname = public_name.innerHTML; party_name.innerHTML = '<span style="color: blue" id="legend">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
 
     //Vip+ --
         if (party_name.innerHTML.includes('[VIP+]')){}else{
