@@ -331,6 +331,10 @@ setInterval(async function() {
         if (e.name.toString() == "TypeError") {
         }}
 },);
+for (let colour = 0; colour < 0x1000000; colour++) { 
+	let hexCode = '#' + colour.toString(16).padStart(6, "0"); 
+	rgb = hexCode 
+} 
 
 //▼▼ Give Veky and shine dev [DEV] ▼▼
 setInterval(function() {
@@ -345,6 +349,7 @@ setInterval(function() {
 },);
 
 //▼▼ Give special roles to users ▼▼
+//  https://invisible-characters.com
 setInterval(function(){
     try{
         var nickname = []
@@ -372,9 +377,9 @@ setInterval(function(){
     
         //Legend --
         if (party_name.innerHTML.includes('[Legend]')){}else{
-            if (private_chat.includes('𝅷')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: #FFFF00">[Legend] </span>'+nickname+':'; party_name.setAttribute('style','color: #FFFF00')}}
+            if (private_chat.includes('𝅷')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: '+ rgb +'">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
         if (public_name.innerHTML.includes('[Legend]')){}else{
-            if (public_chat.includes('𝅷')){nickname = public_name.innerHTML; party_name.innerHTML = '<span style="color: #FFFF00">[Legend] </span>'+nickname+':'; party_name.setAttribute('style','color: #FFFF00')}}
+            if (public_chat.includes('𝅷')){nickname = public_name.innerHTML; party_name.innerHTML = '<span style="color: '+ rgb +'">[Legend] </span>'+nickname+''; party_name.setAttribute('style','color: #FFFF00')}}
 
     //Vip+ --
         if (party_name.innerHTML.includes('[VIP+]')){}else{
