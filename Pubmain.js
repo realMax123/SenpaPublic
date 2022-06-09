@@ -357,19 +357,26 @@ setInterval(function(){
         var ingamename = document.getElementById('name')
         var chat_box = document.getElementById('chat-box')
         var ingamediscord = document.getElementById('pf-name')
-        //Devs --
+    //Devs --
         if (party_name.innerHTML.includes('[DEV]')){}else{
             if (private_chat.includes('𝅺')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; party_name.setAttribute('style','color: red')}}
         if (public_name.innerHTML.includes('[DEV]')){}else{
             if (public_chat.includes('𝅺')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: blue">[DEV] </span>'+nickname+''; public_name.setAttribute('style','color: red')}}
 
-        //Special --
+    //Special --
+        //Goat --
         if (party_name.innerHTML.includes('[GOAT]')){}else{
             if (private_chat.includes('𝅹')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}}
         if (public_name.innerHTML.includes('[GOAT]')){}else{
             if (public_chat.includes('𝅹')){nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: red">[GOAT] </span>'+nickname+''}}
+    
+        //Legend --
+        if (party_name.innerHTML.includes('[Legend]')){}else{
+            if (private_chat.includes('𝅷')){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: #FFFF00">[Legend] </span>'+nickname+':'; party_name.setAttribute('style','color: #FFFF00')}}
+        if (public_name.innerHTML.includes('[Legend]')){}else{
+            if (public_chat.includes('𝅷')){nickname = public_name.innerHTML; party_name.innerHTML = '<span style="color: #FFFF00">[Legend] </span>'+nickname+':'; party_name.setAttribute('style','color: #FFFF00')}}
 
-        //Vip+ --
+    //Vip+ --
         if (party_name.innerHTML.includes('[VIP+]')){}else{
             if (private_chat.includes('𝅸')){
                 if (party_name.innerHTML = 'AppoX'){nickname = party_name.innerHTML; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+':'; party_name.setAttribute('style','color: #3163F7')}
@@ -383,12 +390,15 @@ setInterval(function(){
                 else{nickname = public_name.innerHTML; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname+'';}}}
 
         //Discord ids / names
-        //Devs --
+    //Devs --
         if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('Veky')){               if (chat_box.value.includes('𝅺')){}else{if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}}}
-        //Special --
+    //Special --
+        //Goat --
         if (ingamediscord.innerHTML == 'diegointhedark#0001' && ingamename.value.includes('ketamine')){ if (chat_box.value.includes('𝅹')){}else{if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}}}
+        //Legend --
+        if (ingamediscord.innerHTML == 'Veky#4504' && ingamename.value.includes('SukMyKuk')){           if (chat_box.value.includes('𝅷')){}else{if (chat_box.value != ''){chat_box.value = '𝅷' + chat_box.value}}}
         //Vip+ --
-        if (ingamediscord.innerHTML == 'isabellaa#8718' && ingamename.value.includes('isabella')){       if (chat_box.value.includes('𝅸')){}else{if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
+        if (ingamediscord.innerHTML == 'isabella#8718' && ingamename.value.includes('isabella')){       if (chat_box.value.includes('𝅸')){}else{if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
         if (ingamediscord.innerHTML == 'Ognjen#5945' && ingamename.value.includes('AppoX')){            if (chat_box.value.includes('𝅸')){}else{if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}}}
 
     } catch (error) {
