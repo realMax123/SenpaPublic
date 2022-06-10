@@ -501,10 +501,10 @@ setInterval(function(){
             if(public_name.innerHTML.includes('Dizaster')){nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span style="color: #A70000">[GOAT] </span>'+nickname}
         }}}
         if (!party_name.innerHTML.includes('[Legend]')){if (party_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role(); 
-            if(party_name.innerHTML.includes('SukMyKuk')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname; party_name.setAttribute('style','color: red')}
+            if(party_name.innerHTML.includes('SukMyKuk')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname;}
         }}}
         if (!public_name.innerHTML.includes('[Legend]')){if (public_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role();
-            if(public_name.innerHTML.includes('SukMyKuk')){ nickname = public_name.innerHTML+ ' '; party_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname; party_name.setAttribute('style','color: red')}
+            if(public_name.innerHTML.includes('SukMyKuk')){ nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname;}
         }}}
         if (!party_name.innerHTML.includes('[VIP+]')){if (party_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
                 if (party_name.innerHTML.includes('AppoX')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #3163F7')}
@@ -515,6 +515,7 @@ setInterval(function(){
                 if (public_name.innerHTML.includes('isabella')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #F131F7')}
         }}}
         specialUser = 'false'
+    //Devs --
         if (discordName == 'Veky#4504' && ingamename.value.includes('Veky'))                {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅺')){if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'Shine#6666' && ingamename.value.includes('Shine'))              {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅺')){if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
     //Goat --
