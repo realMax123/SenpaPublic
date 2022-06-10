@@ -25,6 +25,13 @@
         transform: translate3d(-100%, 0, 0)
     }
 }
+#new-panel .partition.left, #settings-panel .partition.left canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
 #huds #chat-room div .nick #legend {
     animation: colorRotate 5s linear 0s infinite;
 }
@@ -45,11 +52,78 @@
       color: #6666ff;
     }
 }
-#new-panel .partition.left, #settings-panel .partition.left canvas {
+#menu .main-menu #EXT-locked-name {
+    color: #4bff00;
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+    right: 60px;
+    width: 0px;
+}
+#new-panel .partition.right .setting.opt-toggle1 .name, #settings-panel .partition.right .setting.opt-toggle1 .name {
+    font-weight: 500;
+    font-size: 18px;
+    width: 250px;
+    display: inline-block;
+}
+#new-panel .partition.right .setting.opt-toggle1 .toggle-btn, #settings-panel .partition.right .setting.opt-toggle1 .toggle-btn {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    left: 274px;
+}
+#new-panel .partition.right .setting.opt-toggle1 .toggle-btn .slide, #settings-panel .partition.right .setting.opt-toggle1 .toggle-btn .slide {
+    height: 12px;
+    border-radius: 5px;
+    background: #555;
+    width: 35px;
     position: absolute;
-    top: 0;
+    top: 7px;
+    transition: all .5s;
+}
+#new-panel .partition.right .setting.opt-toggle1 .toggle-btn .ball, #settings-panel .partition.right .setting.opt-toggle1 .toggle-btn .ball {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    position: absolute;
+    top: 4px;
     left: 0;
-    background-color: black;
+    transition: all .5s;
+}
+#new-panel .partition.right .setting.opt-toggle1 .dropdown-box, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box {
+    width: 200px;
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+#new-panel .partition.right .setting.opt-toggle1 .dropdown-box .selected, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box .selected {
+    display: inline-block;
+    width: 175px;
+}
+#new-panel .partition.right .setting.opt-toggle1 .dropdown-box i, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box i {
+    width: 20px;
+    margin-left: 5px;
+}
+#new-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list {
+    display: none;
+    position: absolute;
+    background: #444;
+    min-width: 100px;
+    top: 20px;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+#new-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list .dropdown-item, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list .dropdown-item {
+    padding: 4px 8px;
 }
 [role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
     cursor: url(https://i.imgur.com/whxjaFd.png) 25 25, auto !important;
