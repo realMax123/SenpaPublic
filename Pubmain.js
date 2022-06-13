@@ -134,15 +134,6 @@
 #new-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list .dropdown-item, #settings-panel .partition.right .setting.opt-toggle1 .dropdown-box .dropdown-list .dropdown-item {
     padding: 4px 8px;
 }
-[role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
-    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25, auto !important;
-}
-* {
-    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25 , auto !important;
-}
-[id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
-    cursor: url(https://i.imgur.com/whxjaFd.png) 25 25 , auto !important;
-}
 #new-panel .partition.right .setting, #settings-panel .partition.right .setting {
     padding: 16px;
     transition: all .5s;
