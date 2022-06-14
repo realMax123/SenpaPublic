@@ -222,8 +222,8 @@ var mod_version = '0.2.5'
 
 //▼▼ DBug console log [Only used for Dbugging code (devs work) ignore if your normal user] ▼▼
 //Use to activate dbugging without need to change code
-//ExtDbug.innerHTML = 'true'
-//ExtDbugRole.innerHTML = 'true'
+//ExtDbug.innerHTML = 'true'                  | basic functions as save-all, get-all, new stuff created
+//ExtDbugRole.innerHTML = 'true'              | special roles (Vip+,Dev,etc..)  [NOTE : SPAM CONSOLE]
 document.getElementById('root').appendChild(document.createElement('div'))
 document.getElementById('root').lastChild.outerHTML = '<div id=Extended_Senpa></div>'
 var root = document.getElementById('Extended_Senpa')
@@ -233,8 +233,8 @@ root.children[0].outerHTML = '<div id=Extended-Dbug></div>'
 root.children[1].outerHTML = '<div id=Extended-Dbug-roles></div>'
 var extensionDbug = document.body.appendChild(document.createElement('script'))
 extensionDbug.innerHTML = 'var ExtDbug = document.getElementById("Extended-Dbug"); var ExtDbugRole = document.getElementById("Extended-Dbug-roles");'
-var DBug = document.getElementById('Extended-Dbug');           DBug.style.display = 'none'; DBug.innerHTML = 'false'  //basic functions as save-all, get-all, new stuff created
-var DBugRole = document.getElementById('Extended-Dbug-roles'); DBugRole.style.display = 'none'; DBugRole.innerHTML = 'false' //special roles (Vip+,Dev,etc..) [NOTE : SPAM CONSOLE]
+var DBug = document.getElementById('Extended-Dbug');           DBug.style.display = 'none'; DBug.innerHTML = 'false'
+var DBugRole = document.getElementById('Extended-Dbug-roles'); DBugRole.style.display = 'none'; DBugRole.innerHTML = 'false' 
 function DBug_save_bg_color()   {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved new background color value')}}
 function DBug_save_bg_border()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved new background border value')}}
 function DBug_save_main_color() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved main primary color value')}}
@@ -302,10 +302,35 @@ function button_tab(){
 var tab_row = extension.children[0]
 var settings_list = extension.children[1]
 tab_row.appendChild(document.createElement('div'))
+tab_row.appendChild(document.createElement('div'))
 tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
+tab_row.children[1].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="cursor">Cursor</div>'
+settings_list.appendChild(document.createElement('div'))
 settings_list.appendChild(document.createElement('div'))
 settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active>'
+settings_list.children[1].outerHTML = '<div class="sub-list" data-name="cursor">'
 DBug_create_ext_sett();
+
+//▼▼ Adding event listeners to tab row ▼▼
+var tab_menu = tab_row.children[0]
+var tab_cursor = tab_row.children[1]
+var sub_menu = settings_list.children[0]
+var sub_cursor = settings_list.children[1]
+tab_menu.addEventListener('click', tab_row_menu)
+tab_cursor.addEventListener('click', tab_row_cursor)
+
+function tab_row_menu(){
+    tab_menu.setAttribute("Active", 4)
+    sub_menu.setAttribute("Active", 4)
+    tab_cursor.removeAttribute("Active")
+    sub_cursor.removeAttribute("Active")
+}
+function tab_row_cursor(){
+    tab_cursor.setAttribute("Active", 4)
+    sub_cursor.setAttribute("Active", 4)
+    tab_menu.removeAttribute("Active")
+    sub_menu.removeAttribute("Active")
+}
 
 //▼▼ Adding user settings to [Menu] tab ▼▼
 var ext_menu = document.getElementsByClassName('sub-list')[16]
@@ -336,6 +361,10 @@ ext_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><d
 ext_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 ext_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text" placeholder="Must be google link | https:// |"></div>'
 ext_menu.children[6].style.display = "none"
+//▼▼ Adding user settings to [Cursor] tab ▼▼
+var ext_cursor = document.getElementsByClassName('sub-list')[17]
+ext_cursor.appendChild(document.createElement('div'))
+ext_cursor.children[0].outerHTML = '<div class="setting opt-toggle" id="costum_cursor"><div class="name">Disable use of costum cursors</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 DBug_create_user_sett();
 
 //Creating def variables
@@ -408,9 +437,7 @@ setInterval(function() {
         else{document.getElementsByClassName("exp-area")[0].style.display = ""
         }
         if (discordName == ''){discordName = document.getElementById('pf-name').innerHTML; discordName = discordName;}
-    } catch (error) {
-        if (error.name.toString() == "TypeError") {}
-    }
+    }   catch (error) {}
 },100);
 
 //▼▼ Saving all user data settings to google client [cache] ▼▼ 
@@ -458,17 +485,16 @@ setInterval(async function() {
             document.getElementById("endGame").style = ''
             DBug_closed_endgame();
         }
-    }catch (e) {
-        if (e.name.toString() == "TypeError") {
-        }}
+    }catch (error) {}
 },);
-
 //▼▼ For thos who have extension roles and original [VIP] remove vip ▼▼
 function checkVip(){
+    try{
     var PrivateChat = document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0]
     var PublicChat = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("nick")[0]
-    if (PrivateChat.children[0].innerHTML == '[VIP]'){PrivateChat.children[0].innerHTML = ''}
-    if (PublicChat.children[0].innerHTML == '[VIP]'){PublicChat.children[0].innerHTML = ''}
+    if (PrivateChat.children[1].innerHTML == '[VIP]'){PrivateChat.children[1].innerHTML = ''}
+    if (PublicChat.children[1].innerHTML == '[VIP]'){PublicChat.children[1].innerHTML = ''}
+    } catch(error){}
 }
 //▼▼ Give special roles to users ▼▼
 //  https://invisible-characters.com
@@ -485,37 +511,45 @@ setInterval(function(){
         var party_chat = party_only.lastElementChild.getElementsByClassName("message")[0].innerHTML
         var public_chat = public_only.lastElementChild.getElementsByClassName("message")[0].innerHTML
     //Main function
-        if (!party_name.innerHTML.includes('[DEV]')){if (party_chat.includes('𝅺')){if (specialUser == 'true'){DBug_Dev_Role();checkVip();
-            if (party_name.innerHTML.includes('Vekk')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; party_name.setAttribute('style','color: red')}
+        if (!party_name.innerHTML.includes('[DEV]')){if (party_chat.includes('𝅺')){if (specialUser == 'true'){DBug_Dev_Role();
+            if (party_name.innerHTML.includes('Veky')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; party_name.setAttribute('style','color: red')}
             if (party_name.innerHTML.includes('Shine')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; party_name.setAttribute('style','color: red')}
+            checkVip();
         }}}
-        if (!public_name.innerHTML.includes('[DEV]')){if (public_chat.includes('𝅺')){if (specialUser == 'true'){DBug_Dev_Role();checkVip();
-            if (public_name.innerHTML.includes('Vekk')){nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; public_name.setAttribute('style','color: red')}
+        if (!public_name.innerHTML.includes('[DEV]')){if (public_chat.includes('𝅺')){if (specialUser == 'true'){DBug_Dev_Role();
+            if (public_name.innerHTML.includes('Veky')){nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; public_name.setAttribute('style','color: red')}
             if (public_name.innerHTML.includes('Shine')){nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span style="color: blue">[DEV] </span>' +nickname; public_name.setAttribute('style','color: red')}
+            checkVip();
         }}}
-        if (!party_name.innerHTML.includes('[GOAT]')){if (party_chat.includes('𝅹')){if (specialUser == 'true'){DBug_Goat_Role();checkVip();
+        if (!party_name.innerHTML.includes('[GOAT]')){if (party_chat.includes('𝅹')){if (specialUser == 'true'){DBug_Goat_Role();
             if(party_name.innerHTML.includes('Dizaster')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span style="color: #A70000">[GOAT] </span>'+nickname}
+            checkVip();
         }}}
-        if (!public_name.innerHTML.includes('[GOAT]')){if (public_chat.includes('𝅹')){if (specialUser == 'true'){DBug_Goat_Role();checkVip();
+        if (!public_name.innerHTML.includes('[GOAT]')){if (public_chat.includes('𝅹')){if (specialUser == 'true'){DBug_Goat_Role();
             if(public_name.innerHTML.includes('Dizaster')){nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span style="color: #A70000">[GOAT] </span>'+nickname}
+            checkVip();
         }}}
-        if (!party_name.innerHTML.includes('[Legend]')){if (party_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role();checkVip();
+        if (!party_name.innerHTML.includes('[Legend]')){if (party_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role();
             if(party_name.innerHTML.includes('SukMyKuk')){nickname = party_name.innerHTML+ ' '; party_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname;}
+            checkVip();
         }}}
-        if (!public_name.innerHTML.includes('[Legend]')){if (public_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role();checkVip();
+        if (!public_name.innerHTML.includes('[Legend]')){if (public_chat.includes('𝅷')){if (specialUser == 'true'){DBug_Legend_Role();
             if(public_name.innerHTML.includes('SukMyKuk')){ nickname = public_name.innerHTML+ ' '; public_name.innerHTML = '<span id="legend" style="color: #FFFFFF">[Legend] </span>'+nickname;}
+            checkVip();
         }}}
-        if (!party_name.innerHTML.includes('[VIP+]')){if (party_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();checkVip();
-                if (party_name.innerHTML.includes('AppoX')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #3163F7')}
-                if (party_name.innerHTML.includes('isabella')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #F131F7')}
+        if (!party_name.innerHTML.includes('[VIP+]')){if (party_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
+            if (party_name.innerHTML.includes('AppoX')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #3163F7')}
+            if (party_name.innerHTML.includes('isabella')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #F131F7')}
+            checkVip();
         }}}
-        if (!public_name.innerHTML.includes('[VIP+]')){if (public_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();checkVip();
-                if (public_name.innerHTML.includes('AppoX')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #3163F7')}
-                if (public_name.innerHTML.includes('isabella')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #F131F7')}
+        if (!public_name.innerHTML.includes('[VIP+]')){if (public_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
+            if (public_name.innerHTML.includes('AppoX')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #3163F7')}
+            if (public_name.innerHTML.includes('isabella')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #F131F7')}
+            checkVip();
         }}}
         specialUser = 'false'
     //Devs -- 
-        if (discordName == 'Veky#4504' && ingamename.value.includes('Vekk'))                {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅺')){if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
+        if (discordName == 'Veky#4504' && ingamename.value.includes('Veky'))                {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅺')){if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'Shine#6666' && ingamename.value.includes('Shine'))              {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅺')){if (chat_box.value != ''){chat_box.value = '𝅺' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
     //Goat --
         if (discordName == 'diegointhedark#0001' && ingamename.value.includes('Dizaster'))  {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅹')){if (chat_box.value != ''){chat_box.value = '𝅹' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
@@ -524,10 +558,8 @@ setInterval(function(){
     //Vip+ --
         if (discordName == 'isabella#8718' && ingamename.value.includes('isabella'))        {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'Ognjen#5945' && ingamename.value.includes('AppoX'))             {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
-    } catch (error) {
-        if (error.name.toString() == "TypeError") {}
-}},1);
-
+    } catch (error) {}
+},1);
 //▼▼ Add curent version of the extended mod ▼▼
 document.getElementsByClassName('partition left')[0].appendChild(document.createElement('div'))
 document.getElementsByClassName('partition left')[0].lastChild.outerHTML = '<div id="Extended-Version">Extended Version '+mod_version+'</div>'
