@@ -417,10 +417,9 @@ setInterval(function() {
         else{document.getElementsByClassName("exp-area")[0].style.display = ""
         }
         if (discord_id_button.className === 'toggle-btn active'){
-            discordName = document.getElementById('pf-name').innerHTML = hidden_discord_id;
+            document.getElementById('pf-name').innerHTML = hidden_discord_id;
         }
-        else {discordName = document.getElementById('pf-name').innerHTML = discordName;
-
+        else {document.getElementById('pf-name').innerHTML = discordName;
         }
     }   catch (error) {}
 },100);
