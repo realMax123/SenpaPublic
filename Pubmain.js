@@ -218,7 +218,7 @@ document.getElementById('chat-box').placeholder = '殺ExtendedSenpaす: Send mes
 document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
 document.getElementById('chat-room').style['height'] = '360px'
 document.getElementById('chat-room').style['width'] = '260px'
-var mod_version = '0.2.5'
+var mod_version = '0.3.1'
 
 //▼▼ DBug console log [Only used for Dbugging code (devs work) ignore if your normal user] ▼▼
 //Use to activate dbugging without need to change code
@@ -240,6 +240,7 @@ function DBug_save_bg_border()  {if(DBug.innerHTML == 'true'){console.log('殺Ex
 function DBug_save_main_color() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved main primary color value')}}
 function DBug_save_logo_color() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved senpa logo color value')}}
 function DBug_save_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved xp button position')}}
+function DBug_save_disc_button(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved hide discord id button position')}}
 function DBug_save_bg_link()    {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved background link value')}}
 function DBug_save_bg_button()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved background button position')}}
 function DBug_get_bg_color()    {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background color value')}}
@@ -247,6 +248,7 @@ function DBug_get_bg_border()   {if(DBug.innerHTML == 'true'){console.log('殺Ex
 function DBug_get_main_color()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get main primary color value')}}
 function DBug_get_logo_color()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get senpa logo color value')}}
 function DBug_get_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get xp button position')}}
+function Dbug_get_discord_pos() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get discord id button position')}}
 function DBug_get_bg_link()     {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background link value')}}
 function DBug_get_bg_button()   {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background button position')}}
 function DBug_create_lockName() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Created Locked Name div(html)')}}
@@ -302,35 +304,10 @@ function button_tab(){
 var tab_row = extension.children[0]
 var settings_list = extension.children[1]
 tab_row.appendChild(document.createElement('div'))
-tab_row.appendChild(document.createElement('div'))
 tab_row.children[0].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="menu" active="4">Menu</div>'
-tab_row.children[1].outerHTML = '<div class="tab" type="tab" target-container="settings-list-menu" target-name="cursor">Cursor</div>'
-settings_list.appendChild(document.createElement('div'))
 settings_list.appendChild(document.createElement('div'))
 settings_list.children[0].outerHTML = '<div class="sub-list" data-name="menu" active>'
-settings_list.children[1].outerHTML = '<div class="sub-list" data-name="cursor">'
 DBug_create_ext_sett();
-
-//▼▼ Adding event listeners to tab row ▼▼
-var tab_menu = tab_row.children[0]
-var tab_cursor = tab_row.children[1]
-var sub_menu = settings_list.children[0]
-var sub_cursor = settings_list.children[1]
-tab_menu.addEventListener('click', tab_row_menu)
-tab_cursor.addEventListener('click', tab_row_cursor)
-
-function tab_row_menu(){
-    tab_menu.setAttribute("Active", 4)
-    sub_menu.setAttribute("Active", 4)
-    tab_cursor.removeAttribute("Active")
-    sub_cursor.removeAttribute("Active")
-}
-function tab_row_cursor(){
-    tab_cursor.setAttribute("Active", 4)
-    sub_cursor.setAttribute("Active", 4)
-    tab_menu.removeAttribute("Active")
-    sub_menu.removeAttribute("Active")
-}
 
 //▼▼ Adding user settings to [Menu] tab ▼▼
 var ext_menu = document.getElementsByClassName('sub-list')[16]
@@ -341,10 +318,9 @@ ext_menu.appendChild(document.createElement('div'))
 ext_menu.appendChild(document.createElement('div'))
 ext_menu.appendChild(document.createElement('div'))
 ext_menu.appendChild(document.createElement('div'))
-ext_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_bg_color"><div class="name">Menu background color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-ext_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border glow color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-ext_menu.children[2].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-ext_menu.children[3].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
+ext_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border glow color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[2].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
 var logo_color = document.getElementsByClassName("dropdown-list")[8]
 var logo = document.getElementsByClassName("selected")[8]
 logo_color.appendChild(document.createElement('div')); logo_color.children[0].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Red</div>';          logo_color.children[0].addEventListener('click', function(){logo.textContent = 'Red',       change_logo_color(); save_logo_color();}); 
@@ -357,57 +333,58 @@ logo_color.appendChild(document.createElement('div')); logo_color.children[6].ou
 logo_color.appendChild(document.createElement('div')); logo_color.children[7].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Dark Blue</div>';    logo_color.children[7].addEventListener('click', function(){logo.textContent = 'Dark Blue', change_logo_color(); save_logo_color();});
 logo_color.appendChild(document.createElement('div')); logo_color.children[8].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Purple</div>';       logo_color.children[8].addEventListener('click', function(){logo.textContent = 'Purple',    change_logo_color(); save_logo_color();});
 logo_color.appendChild(document.createElement('div')); logo_color.children[9].outerHTML = '<div class="dropdown-item" id="ownCellColoring">Pink</div>';         logo_color.children[9].addEventListener('click', function(){logo.textContent = 'Pink',      change_logo_color(); save_logo_color();});
-ext_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+ext_menu.children[3].outerHTML = '<div class="setting opt-toggle" id="xp_bar"><div class="name">Hide user level xp</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
+ext_menu.children[4].outerHTML = '<div class="setting opt-toggle" id="discord_id_btn"><div class="name">Hide user discord id</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 ext_menu.children[5].outerHTML = '<div class="setting opt-toggle" id="use_menu_background"><div class="name">Use menu background image</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 ext_menu.children[6].outerHTML = '<div class="setting opt-input" id="background_link_placeholder"><div class="name">Background image URL</div><input class="text" placeholder="Must be google link | https:// |"></div>'
 ext_menu.children[6].style.display = "none"
-//▼▼ Adding user settings to [Cursor] tab ▼▼
-var ext_cursor = document.getElementsByClassName('sub-list')[17]
-ext_cursor.appendChild(document.createElement('div'))
-ext_cursor.children[0].outerHTML = '<div class="setting opt-toggle" id="costum_cursor"><div class="name">Disable use of costum cursors</div><div class="toggle-btn"><div class="slide"></div><div class="ball"></div></div></div>'
 DBug_create_user_sett();
 
 //Creating def variables
-var menu_background_color = document.getElementsByClassName("text minicolors-input")[16]
-var menu_border_color = document.getElementsByClassName("text minicolors-input")[17]
-var main_primary_color = document.getElementsByClassName("text minicolors-input")[18]
-var background_image = document.getElementsByClassName("text")[69]
+var menu_border_color = document.getElementsByClassName("text minicolors-input")[16]
+var main_primary_color = document.getElementsByClassName("text minicolors-input")[17]
+var background_image = document.getElementsByClassName("text")[68]
 var toggle_button = document.getElementsByClassName("toggle-btn")
 var main_menu = document.getElementsByClassName("main-menu")[0]
-var link_red =      '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
-var link_orange =   '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">'
-var link_yellow =   '<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">'
-var link_green =    '<img src="https://i.imgur.com/raQFhDP.png" alt="logo">'
-var link_darkgreen ='<img src="https://i.imgur.com/DoBJIsP.png" alt="logo">'
-var link_cyan =     '<img src="https://i.imgur.com/ajnGKuy.png" alt="logo">'
-var link_blue =     '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">'
-var link_darkblue = '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">'
-var link_purple =   '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">'
-var link_pink =     '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">'
-
+var xp_bar_button = document.getElementById('xp_bar').children[1]
+var discord_id_button = document.getElementById('discord_id_btn').children[1]
+var menu_background_button = document.getElementById('use_menu_background').children[1]
 //▼▼ Addind event listeners for changing, saving user data ▼▼
 document.getElementById('xp_bar').children[1].addEventListener('click', use_xp_bar)
+document.getElementById('discord_id_btn').children[1].addEventListener('click', use_discord_btn)
 document.getElementById('use_menu_background').children[1].addEventListener('click', use_background_button)
-menu_background_color.addEventListener('change', function(){change_background_color(); save_background_color();})
 menu_border_color.addEventListener('change', function(){change_border_color(); save_background_border();})
 main_primary_color.addEventListener('change', function(){change_primary_color(); save_main_primary_color();})
-background_image.addEventListener('change', save_background_link)
 Dbug_add_events_list();
 
 //▼▼ Creating functions for settings ▼▼
-function change_background_color(){main_menu.style.setProperty("background", menu_background_color.value)}
 function change_border_color(){main_menu.style.boxShadow = '0 0 30px'+menu_border_color.value}
 function use_xp_bar(){
-    if  (toggle_button[32].className === 'toggle-btn')
-        {toggle_button[32].className = 'toggle-btn active'}
-    else{toggle_button[32].className = 'toggle-btn'}
+    if  (xp_bar_button.className === 'toggle-btn')
+        {xp_bar_button.className = 'toggle-btn active'}
+    else{xp_bar_button.className = 'toggle-btn'}
     save_xp_button();}
+function use_discord_btn(){
+    if  (discord_id_button.className === 'toggle-btn')
+        {discord_id_button.className = 'toggle-btn active'}
+    else{discord_id_button.className = 'toggle-btn'}
+    save_discord_btn();}
 function use_background_button(){
-    if  (toggle_button[33].className === 'toggle-btn')
-        {toggle_button[33].className = 'toggle-btn active'}
-    else{toggle_button[33].className = 'toggle-btn'}
+    if  (menu_background_button.className === 'toggle-btn')
+        {menu_background_button.className = 'toggle-btn active'}
+    else{menu_background_button.className = 'toggle-btn'}
     save_background_button();}
 function change_logo_color(){
+    var link_red =      '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
+    var link_orange =   '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">'
+    var link_yellow =   '<img src="https://i.imgur.com/bRAwjZr.png" alt="logo">'
+    var link_green =    '<img src="https://i.imgur.com/raQFhDP.png" alt="logo">'
+    var link_darkgreen ='<img src="https://i.imgur.com/DoBJIsP.png" alt="logo">'
+    var link_cyan =     '<img src="https://i.imgur.com/ajnGKuy.png" alt="logo">'
+    var link_blue =     '<img src="https://i.imgur.com/W9FiqLl.png" alt="logo">'
+    var link_darkblue = '<img src="https://i.imgur.com/JcK8S2f.png" alt="logo">'
+    var link_purple =   '<img src="https://i.imgur.com/i8yhwmr.png" alt="logo">'
+    var link_pink =     '<img src="https://i.imgur.com/D25DhfC.png" alt="logo">'
     var senpa_logo_link = document.getElementsByClassName("logo")[0]
         if (logo.textContent === 'Red')         {senpa_logo_link.innerHTML = link_red}
         if (logo.textContent === 'Orange')      {senpa_logo_link.innerHTML = link_orange}
@@ -421,33 +398,41 @@ function change_logo_color(){
         if (logo.textContent === 'Pink')        {senpa_logo_link.innerHTML = link_pink}}
 
 discordName = []
+hidden_discord_id = []
 setInterval(function() {
     var bg_link = document.getElementById("background_link_placeholder")
-    try{        
-        if (toggle_button[33].className === 'toggle-btn active'){
+    try{    
+        if (discordName == ''){discordName = document.getElementById('pf-name').innerHTML; discordName = discordName;}
+        if (hidden_discord_id == '' || hidden_discord_id == 'undefined'){hidden_discord_id = discordName.replace(/[^a-zA-Z]/g,"");}
+        if (menu_background_button.className === 'toggle-btn active'){
             bg_link.style.display = "block"
             main_menu.style.setProperty("background-image", "url("+background_image.value+")")
         }
         else{bg_link.style.display = "none"
             main_menu.style.setProperty("background-image", "")
         }
-        if (toggle_button[32].className === 'toggle-btn active'){
+        if (xp_bar_button.className === 'toggle-btn active'){
             document.getElementsByClassName("exp-area")[0].style.display = "none"
         }
         else{document.getElementsByClassName("exp-area")[0].style.display = ""
         }
-        if (discordName == ''){discordName = document.getElementById('pf-name').innerHTML; discordName = discordName;}
+        if (discord_id_button.className === 'toggle-btn active'){
+            discordName = document.getElementById('pf-name').innerHTML = hidden_discord_id;
+        }
+        else {discordName = document.getElementById('pf-name').innerHTML = discordName;
+
+        }
     }   catch (error) {}
 },100);
 
 //▼▼ Saving all user data settings to google client [cache] ▼▼ 
-function save_background_color()    {chrome.storage.sync.set({'bg_color': menu_background_color.value},function(){console.log(DBug_save_bg_color())})}
-function save_background_border()   {chrome.storage.sync.set({'border_color': menu_border_color.value},function(){console.log(DBug_save_bg_border())})}
-function save_main_primary_color()  {chrome.storage.sync.set({'main_color': main_primary_color.value},function(){console.log(DBug_save_main_color())})}
-function save_logo_color()          {chrome.storage.sync.set({'senpa_logo_color': logo.textContent},function(){console.log(DBug_save_logo_color())})}
-function save_xp_button()           {chrome.storage.sync.set({'user_xp_button': toggle_button[32].className},function(){console.log(DBug_save_xpbutton_pos())})}
-function save_background_button()   {chrome.storage.sync.set({'use_menu_bg_button': toggle_button[33].className},function(){console.log(DBug_save_bg_button())})}
-function save_background_link()     {chrome.storage.sync.set({'background_link': background_image.value},function(){console.log(DBug_save_bg_link())})}
+function save_background_border()   {chrome.storage.sync.set({'border_color': menu_border_color.value}, function(){console.log(DBug_save_bg_border())})}
+function save_main_primary_color()  {chrome.storage.sync.set({'main_color': main_primary_color.value}, function(){console.log(DBug_save_main_color())})}
+function save_logo_color()          {chrome.storage.sync.set({'senpa_logo_color': logo.textContent}, function(){console.log(DBug_save_logo_color())})}
+function save_xp_button()           {chrome.storage.sync.set({'user_xp_button': xp_bar_button.className}, function(){console.log(DBug_save_xpbutton_pos())})}
+function save_discord_btn()         {chrome.storage.sync.set({'hide_discord_id': discord_id_button.className}, function(){console.log(DBug_save_disc_button())})}
+function save_background_button()   {chrome.storage.sync.set({'use_menu_bg_button': menu_background_button.className}, function(){console.log(DBug_save_bg_button())})}
+function save_background_link()     {chrome.storage.sync.set({'background_link': background_image.value}, function(){console.log(DBug_save_bg_link())})}
 
 //▼▼ Load user data from google client [cache] ▼▼
 window.onload = function(){
@@ -464,12 +449,12 @@ window.onload = function(){
         if (data.senpa_logo_color === 'Purple')     {logo.textContent = 'Purple', change_logo_color()}
         if (data.senpa_logo_color === 'Pink')       {logo.textContent = 'Pink', change_logo_color()}
         DBug_get_logo_color()})
-    chrome.storage.sync.get(['bg_color'],           function(data){menu_background_color.value = data.bg_color, change_background_color(); DBug_get_bg_color()})
     chrome.storage.sync.get(['border_color'],       function(data){menu_border_color.value = data.border_color, change_border_color(); DBug_get_bg_border()})
     chrome.storage.sync.get(['main_color'],         function(data){main_primary_color.value = data.main_color, change_primary_color(); DBug_get_main_color()})
     chrome.storage.sync.get(['background_link'],    function(data){background_image.value = data.background_link, DBug_get_bg_link()})
-    chrome.storage.sync.get(['user_xp_button'],     function(data){if (data.user_xp_button === 'toggle-btn active'){toggle_button[32].className = 'toggle-btn active'}else{toggle_button[32].className = 'toggle-btn'}; DBug_get_xpbutton_pos()})
-    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){toggle_button[33].className = 'toggle-btn active';} else{toggle_button[33].className = 'toggle-btn'}; DBug_get_bg_button()})
+    chrome.storage.sync.get(['user_xp_button'],     function(data){if (data.user_xp_button === 'toggle-btn active'){xp_bar_button.className = 'toggle-btn active'}else{xp_bar_button.className = 'toggle-btn'}; DBug_get_xpbutton_pos()})
+    chrome.storage.sync.get(['hide_discord_id'],    function(data){if (data.hide_discord_id === 'toggle-btn active'){discord_id_button.className = 'toggle-btn active'}else{discord_id_button.className = 'toggle-btn'}; Dbug_get_discord_pos()})
+    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){menu_background_button.className = 'toggle-btn active';} else{menu_background_button.className = 'toggle-btn'}; DBug_get_bg_button()})
 }
 
 //▼▼ Setting up sleep function ▼▼
