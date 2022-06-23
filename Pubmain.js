@@ -524,11 +524,13 @@ setInterval(function(){
         if (!party_name.innerHTML.includes('[VIP+]')){if (party_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
             if (party_name.innerHTML.includes('AppoX')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #3163F7')}
             if (party_name.innerHTML.includes('isabella')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #F131F7')}
+            if (party_name.innerHTML.includes('乃卂几ᗪlㄒ')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: black')}
             checkVip();
         }}}
         if (!public_name.innerHTML.includes('[VIP+]')){if (public_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
             if (public_name.innerHTML.includes('AppoX')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #3163F7')}
             if (public_name.innerHTML.includes('isabella')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #F131F7')}
+            if (public_name.innerHTML.includes('乃卂几ᗪlㄒ')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: black')}
             checkVip();
         }}}
         specialUser = 'false'
@@ -540,10 +542,12 @@ setInterval(function(){
     //Legend --
         if (discordName == 'Veky#4504' && ingamename.value.includes('SukMyKuk'))            {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅷')){if (chat_box.value != ''){chat_box.value = '𝅷' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
     //Vip+ --
+        if (discordName == 'conon5#3218' && ingamename.value.includes('乃卂几ᗪlㄒ'))          {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'isabella#8718' && ingamename.value.includes('isabella'))        {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'Ognjen#5945' && ingamename.value.includes('AppoX'))             {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
     } catch (error) {}
 },1);
+
 //▼▼ Add curent version of the extended mod ▼▼
 document.getElementsByClassName('partition left')[0].appendChild(document.createElement('div'))
 document.getElementsByClassName('partition left')[0].lastChild.outerHTML = '<div id="Extended-Version">Extended Version '+mod_version+'</div>'
