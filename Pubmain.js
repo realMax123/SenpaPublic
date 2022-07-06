@@ -218,7 +218,7 @@ document.getElementById('chat-box').placeholder = '殺ExtendedSenpaす: Send mes
 document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
 document.getElementById('chat-room').style['height'] = '360px'
 document.getElementById('chat-room').style['width'] = '260px'
-var mod_version = '0.3.1'
+var mod_version = '0.3.4'
 
 //▼▼ DBug console log [Only used for Dbugging code (devs work) ignore if your normal user] ▼▼
 //Use to activate dbugging without need to change code
@@ -233,36 +233,40 @@ root.children[0].outerHTML = '<div id=Extended-Dbug></div>'
 root.children[1].outerHTML = '<div id=Extended-Dbug-roles></div>'
 var extensionDbug = document.body.appendChild(document.createElement('script'))
 extensionDbug.innerHTML = 'var ExtDbug = document.getElementById("Extended-Dbug"); var ExtDbugRole = document.getElementById("Extended-Dbug-roles");'
-var DBug = document.getElementById('Extended-Dbug');           DBug.style.display = 'none'; DBug.innerHTML = 'false'
-var DBugRole = document.getElementById('Extended-Dbug-roles'); DBugRole.style.display = 'none'; DBugRole.innerHTML = 'false' 
-function DBug_save_bg_color()   {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved new background color value')}}
-function DBug_save_bg_border()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved new background border value')}}
-function DBug_save_main_color() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved main primary color value')}}
-function DBug_save_logo_color() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved senpa logo color value')}}
-function DBug_save_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved xp button position')}}
-function DBug_save_disc_button(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved hide discord id button position')}}
-function DBug_save_bg_link()    {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved background link value')}}
-function DBug_save_bg_button()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Saved background button position')}}
-function DBug_get_bg_color()    {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background color value')}}
-function DBug_get_bg_border()   {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background border value')}}
-function DBug_get_main_color()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get main primary color value')}}
-function DBug_get_logo_color()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get senpa logo color value')}}
-function DBug_get_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get xp button position')}}
-function Dbug_get_discord_pos() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get discord id button position')}}
-function DBug_get_bg_link()     {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background link value')}}
-function DBug_get_bg_button()   {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Get background button position')}}
-function DBug_create_lockName() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Created Locked Name div(html)')}}
-function DBug_create_ext_sett() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Created option Extended Mod in settings')}}
-function DBug_create_user_sett(){if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Created user settings inside Extended Mod')}}
-function Dbug_add_events_list() {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Adding event listeners')}}
-function DBug_closed_endgame()  {if(DBug.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Closing deth screen menu')}}
-function DBug_Dev_Role()        {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Last user has role Dev')}}
-function DBug_Legend_Role()     {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Last user has role Legend')}}
-function DBug_Goat_Role()       {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Last user has role Goat')}}
-function DBug_Vip_Role()        {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Last user has role Vip+')}}
-function DBug_User_Has_Role()   {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: User has role')}}
-function DBug_User_No_Role()    {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: User does not have role')}}
-function DBug_Special_User()    {if(DBugRole.innerHTML == 'true'){console.log('殺ExtendedSenpaす: Special user detected')}}
+var DBug = document.getElementById('Extended-Dbug');           DBug.style.display = 'none'; DBug.innerHTML = 'true'
+var DBugRole = document.getElementById('Extended-Dbug-roles'); DBugRole.style.display = 'none'; DBugRole.innerHTML = 'false'
+
+var ext_senpa_dev = "\u001b[1;35m 殺" + "\u001b[1;34m ExtendedSenpa" + "\u001b[1;35m す" + "\u001B[0m"
+function DBug_save_bg_color()   {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved new background color value')}}
+function DBug_save_bg_border()  {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved new background border value')}}
+function DBug_save_main_color() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved main primary color value')}}
+function DBug_save_logo_color() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved senpa logo color value')}}
+function DBug_save_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved xp button position')}}
+function DBug_save_disc_button(){if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved hide discord id button position')}}
+function DBug_save_bg_link()    {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved background link value')}}
+function DBug_save_bg_button()  {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Saved background button position')}}
+function DBug_get_bg_color()    {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get background color value')}}
+function DBug_get_bg_border()   {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get background border value')}}
+function DBug_get_main_color()  {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get main primary color value')}}
+function DBug_get_logo_color()  {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get senpa logo color value')}}
+function DBug_get_xpbutton_pos(){if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get xp button position')}}
+function Dbug_get_discord_pos() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get discord id button position')}}
+function DBug_get_bg_link()     {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get background link value')}}
+function DBug_loading_data()    {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Loading user data')}}
+function DBug_get_bg_button()   {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Get background button position')}}
+function DBug_create_lockName() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Created Locked Name div inside html')}}
+function DBug_create_ext_sett() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Created option Extended Mod in settings')}}
+function DBug_create_user_sett(){if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Created user settings inside Extended Mod')}}
+function Dbug_add_events_list() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Adding event listeners')}}
+function DBug_closed_endgame()  {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Closing deth screen menu')}}
+function DBug_loaded_all_data() {if(DBug.innerHTML == 'true'){console.log(ext_senpa_dev + ': Loaded all user data')}}
+function DBug_Dev_Role()        {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': Last user has role Dev')}}
+function DBug_Legend_Role()     {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': Last user has role Legend')}}
+function DBug_Goat_Role()       {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': Last user has role Goat')}}
+function DBug_Vip_Role()        {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': Last user has role Vip+')}}
+function DBug_User_Has_Role()   {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': User has role')}}
+function DBug_User_No_Role()    {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': User does not have role')}}
+function DBug_Special_User()    {if(DBugRole.innerHTML == 'true'){console.log(ext_senpa_dev + ': Special user detected')}}
 
 //▼▼ Adding locked name info ▼▼
 document.getElementById('primary-inputs').appendChild(document.createElement('div'))
@@ -349,12 +353,15 @@ var main_menu = document.getElementsByClassName("main-menu")[0]
 var xp_bar_button = document.getElementById('xp_bar').children[1]
 var discord_id_button = document.getElementById('discord_id_btn').children[1]
 var menu_background_button = document.getElementById('use_menu_background').children[1]
+var bg_link = document.getElementById("background_link_placeholder")
+
 //▼▼ Addind event listeners for changing, saving user data ▼▼
 document.getElementById('xp_bar').children[1].addEventListener('click', use_xp_bar)
 document.getElementById('discord_id_btn').children[1].addEventListener('click', use_discord_btn)
 document.getElementById('use_menu_background').children[1].addEventListener('click', use_background_button)
 menu_border_color.addEventListener('change', function(){change_border_color(); save_background_border();})
 main_primary_color.addEventListener('change', function(){change_primary_color(); save_main_primary_color();})
+bg_link.addEventListener('change', function(){set_background_img(); save_background_link();})
 Dbug_add_events_list();
 
 //▼▼ Creating functions for settings ▼▼
@@ -363,17 +370,37 @@ function use_xp_bar(){
     if  (xp_bar_button.className === 'toggle-btn')
         {xp_bar_button.className = 'toggle-btn active'}
     else{xp_bar_button.className = 'toggle-btn'}
-    save_xp_button();}
+    save_xp_button(); set_xp_bar();
+}
+function set_xp_bar(){
+    if (xp_bar_button.className === 'toggle-btn active'){
+        document.getElementsByClassName("exp-area")[0].style.display = "none"}
+    else{document.getElementsByClassName("exp-area")[0].style.display = ""}
+}
 function use_discord_btn(){
     if  (discord_id_button.className === 'toggle-btn')
         {discord_id_button.className = 'toggle-btn active'}
     else{discord_id_button.className = 'toggle-btn'}
-    save_discord_btn();}
+    save_discord_btn(); set_discord_btn();
+}
+function set_discord_btn(){
+    if (discord_id_button.className === 'toggle-btn active'){
+        document.getElementById('pf-name').innerHTML = hidden_discord_id;}
+    else {document.getElementById('pf-name').innerHTML = discordName;}
+}
 function use_background_button(){
     if  (menu_background_button.className === 'toggle-btn')
         {menu_background_button.className = 'toggle-btn active'}
     else{menu_background_button.className = 'toggle-btn'}
-    save_background_button();}
+    save_background_button(); set_background_img();
+}
+function set_background_img(){
+    if (menu_background_button.className === 'toggle-btn active'){
+        bg_link.style.display = "block"
+        main_menu.style.setProperty("background-image", "url("+background_image.value+")")}
+    else{bg_link.style.display = "none"
+        main_menu.style.setProperty("background-image", "")}
+}
 function change_logo_color(){
     var link_red =      '<img src="https://i.imgur.com/LYwdFOc.png" alt="logo">'
     var link_orange =   '<img src="https://i.imgur.com/9XZUwmN.png" alt="logo">'
@@ -400,29 +427,15 @@ function change_logo_color(){
 discordName = []
 hidden_discord_id = []
 setInterval(function() {
-    var bg_link = document.getElementById("background_link_placeholder")
     try{    
         if (discordName == ''){discordName = document.getElementById('pf-name').innerHTML; discordName = discordName;}
         if (hidden_discord_id == '' || hidden_discord_id == 'undefined'){hidden_discord_id = discordName.replace(/[^a-zA-Z]/g,"");}
-        if (menu_background_button.className === 'toggle-btn active'){
-            bg_link.style.display = "block"
-            main_menu.style.setProperty("background-image", "url("+background_image.value+")")
-        }
-        else{bg_link.style.display = "none"
-            main_menu.style.setProperty("background-image", "")
-        }
-        if (xp_bar_button.className === 'toggle-btn active'){
-            document.getElementsByClassName("exp-area")[0].style.display = "none"
-        }
-        else{document.getElementsByClassName("exp-area")[0].style.display = ""
-        }
-        if (discord_id_button.className === 'toggle-btn active'){
-            document.getElementById('pf-name').innerHTML = hidden_discord_id;
-        }
-        else {document.getElementById('pf-name').innerHTML = discordName;
-        }
+
     }   catch (error) {}
 },100);
+
+//▼▼ Setting up sleep function ▼▼
+function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 
 //▼▼ Saving all user data settings to google client [cache] ▼▼ 
 function save_background_border()   {chrome.storage.sync.set({'border_color': menu_border_color.value}, function(){console.log(DBug_save_bg_border())})}
@@ -435,7 +448,7 @@ function save_background_link()     {chrome.storage.sync.set({'background_link':
 
 //▼▼ Load user data from google client [cache] ▼▼
 window.onload = function(){
-    console.log('殺ExtendedSenpaす: Loading data')
+    DBug_loading_data();
     chrome.storage.sync.get(['senpa_logo_color'], function(data){
         if (data.senpa_logo_color === 'Red')        {logo.textContent = 'Red', change_logo_color()}
         if (data.senpa_logo_color === 'Orange')     {logo.textContent = 'Orange', change_logo_color()}
@@ -448,16 +461,22 @@ window.onload = function(){
         if (data.senpa_logo_color === 'Purple')     {logo.textContent = 'Purple', change_logo_color()}
         if (data.senpa_logo_color === 'Pink')       {logo.textContent = 'Pink', change_logo_color()}
         DBug_get_logo_color()})
-    chrome.storage.sync.get(['border_color'],       function(data){menu_border_color.value = data.border_color, change_border_color(); DBug_get_bg_border()})
-    chrome.storage.sync.get(['main_color'],         function(data){main_primary_color.value = data.main_color, change_primary_color(); DBug_get_main_color()})
+    chrome.storage.sync.get(['border_color'],       function(data){menu_border_color.value = data.border_color, DBug_get_bg_border()})
+    chrome.storage.sync.get(['main_color'],         function(data){main_primary_color.value = data.main_color, DBug_get_main_color()})
     chrome.storage.sync.get(['background_link'],    function(data){background_image.value = data.background_link, DBug_get_bg_link()})
     chrome.storage.sync.get(['user_xp_button'],     function(data){if (data.user_xp_button === 'toggle-btn active'){xp_bar_button.className = 'toggle-btn active'}else{xp_bar_button.className = 'toggle-btn'}; DBug_get_xpbutton_pos()})
     chrome.storage.sync.get(['hide_discord_id'],    function(data){if (data.hide_discord_id === 'toggle-btn active'){discord_id_button.className = 'toggle-btn active'}else{discord_id_button.className = 'toggle-btn'}; Dbug_get_discord_pos()})
-    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){menu_background_button.className = 'toggle-btn active';} else{menu_background_button.className = 'toggle-btn'}; DBug_get_bg_button()})
+    chrome.storage.sync.get(['use_menu_bg_button'], function(data){if (data.use_menu_bg_button === 'toggle-btn active'){menu_background_button.className = 'toggle-btn active';}else{menu_background_button.className = 'toggle-btn'}; DBug_get_bg_button()})
+    setTimeout(update_variables, 500)
 }
-
-//▼▼ Setting up sleep function ▼▼
-function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
+function update_variables(){
+    change_border_color();
+    change_primary_color();
+    set_background_img();
+    set_xp_bar();
+    set_discord_btn();
+    DBug_loaded_all_data();
+}
 
 //▼▼ Auto remove endgame screen [deth screen] ▼▼
 setInterval(async function() {
@@ -471,7 +490,7 @@ setInterval(async function() {
         }
     }catch (error) {}
 },);
-//▼▼ For thos who have extension roles and original [VIP] remove vip ▼▼
+//▼▼ For thos who have extension roles and payed [VIP], remove vip ▼▼
 function checkVip(){
     try{
     var PrivateChat = document.getElementById("chat-party-room").lastElementChild.getElementsByClassName("nick")[0]
@@ -522,12 +541,14 @@ setInterval(function(){
             checkVip();
         }}}
         if (!party_name.innerHTML.includes('[VIP+]')){if (party_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
+            if (party_name.innerHTML.includes('Pthx')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #ffa86c')}
             if (party_name.innerHTML.includes('AppoX')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #3163F7')}
             if (party_name.innerHTML.includes('isabella')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: #F131F7')}
             if (party_name.innerHTML.includes('乃卂几ᗪlㄒ')){nickname = party_name.innerHTML + ' '; party_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; party_name.setAttribute('style','color: black')}
             checkVip();
         }}}
         if (!public_name.innerHTML.includes('[VIP+]')){if (public_chat.includes('𝅸')){if (specialUser == 'true'){DBug_Vip_Role();
+            if (public_name.innerHTML.includes('Pthx')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #ffa86c')}
             if (public_name.innerHTML.includes('AppoX')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #3163F7')}
             if (public_name.innerHTML.includes('isabella')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: #F131F7')}
             if (public_name.innerHTML.includes('乃卂几ᗪlㄒ')){nickname = public_name.innerHTML + ' '; public_name.innerHTML = '<span style="color: yellow">[VIP+] </span>'+nickname; public_name.setAttribute('style','color: black')}
@@ -542,6 +563,7 @@ setInterval(function(){
     //Legend --
         if (discordName == 'Veky#4504' && ingamename.value.includes('SukMyKuk'))            {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅷')){if (chat_box.value != ''){chat_box.value = '𝅷' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
     //Vip+ --
+        if (discordName == 'yGlaive#0883' && ingamename.value.includes('Pthx'))             {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'conon5#3218' && ingamename.value.includes('乃卂几ᗪlㄒ'))          {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'isabella#8718' && ingamename.value.includes('isabella'))        {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
         if (discordName == 'Ognjen#5945' && ingamename.value.includes('AppoX'))             {DBug_User_Has_Role(); specialUser = 'true'; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {DBug_User_No_Role(); ExtLocked.style.display = 'none'; specialUser = 'false'}
