@@ -1,4 +1,4 @@
-    //---------------------------Emoji links-----------------------------\\
+        //---------------------------Emoji links-----------------------------\\
     var kitty =         'https://emoji.gg/assets/emoji/9553-cat-smile.png'
     var cock =          'https://c.tenor.com/9QMTL4kgC5UAAAAC/dead-emoji.gif'
     var sad_cat =       'https://emoji.discord.st/emojis/1685a79a-23f8-4307-9487-a1a5cb59302f.png'
@@ -41,8 +41,8 @@ setInterval(function() {
         var public_chat = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("message")[0].innerHTML
         var public = document.getElementById("chat-all-room").lastElementChild.getElementsByClassName("message")[0]
         var chat = []
-        var emoji_width =  26;
-        var emoji_height = 26;
+        var emoji_width =  24;
+        var emoji_height = 24;
 //---------------------------------------------[kitty]---------------------------------------------\\
         if (private_chat.includes(":kitty:")){chat = private_chat.replace(':kitty:', '<img src="'+kitty+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');private.innerHTML = chat;}
         if (public_chat.includes(":kitty:")){chat = public_chat.replace  (':kitty:', '<img src="'+kitty+'"width="'+emoji_width+'" height="'+emoji_height+'"></img>');public.innerHTML = chat;}
@@ -161,13 +161,20 @@ const emoji_list_a = document.createElement("div")
 emoji_list_a.id = 'emoji_tab_list'
 document.getElementById("huds").appendChild(emoji_list_a)
 function emoji_list_show(){
-    if (document.getElementById('emoji_tab_list').style.display === 'none'){
-        document.getElementById('emoji_tab_list').style.display = 'grid'
-        document.getElementById('emoji_tab_button').style.left = "495px";
-    }else {
+        const boxes = document.getElementsByClassName('emoji_text');
+
+        if (document.getElementById('emoji_tab_list').style.display === 'none'){
+                document.getElementById('emoji_tab_list').style.display = 'grid'
+                document.getElementById('emoji_tab_button').style.left = "495px";
+        for (const box of boxes) {
+                box.style.display = 'block';
+        }}
+        else {
         document.getElementById('emoji_tab_list').style.display = 'none'
         document.getElementById('emoji_tab_button').style.left = "270px";
-    }
+        for (const box of boxes) {
+                box.style.display = 'none';
+        }}
 }
 // '<img class="emoji_text" src="'+emoji+'" width="35" height="35"></img>'+ //
 var emoji_list = document.getElementById('emoji_tab_list')
@@ -244,3 +251,8 @@ emoji_list.children[31].addEventListener('click', function(){textbox = textbar.v
 emoji_list.children[32].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':shinekiss:';     textbar.value = textbox})
 emoji_list.children[33].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':kissy:';         textbar.value = textbox})
 emoji_list.children[34].addEventListener('click', function(){textbox = textbar.value; textbox = textbox + ':egirlkiss:';     textbar.value = textbox})
+
+const boxes = document.getElementsByClassName('emoji_text');
+for (const box of boxes) {
+        box.style.display = 'none';
+}
