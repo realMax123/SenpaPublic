@@ -218,7 +218,7 @@ document.getElementById('chat-box').placeholder = '殺ExtendedSenpaす: Send mes
 document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
 document.getElementById('chat-room').style['height'] = '360px'
 document.getElementById('chat-room').style['width'] = '260px'
-var mod_version = '0.3.4'
+var mod_version = '0.3.6'
 
 //▼▼ DBug console log [Only used for Dbugging code (devs work) ignore if your normal user] ▼▼
 //Use to activate dbugging without need to change code
