@@ -219,6 +219,8 @@ document.getElementById('chat-box').placeholder = '殺ExtendedSenpaす: Send mes
 document.getElementsByClassName("main-menu")[0].style.setProperty("border", "#ffffff00")
 document.getElementById('chat-room').style['height'] = '360px'
 document.getElementById('chat-room').style['width'] = '260px'
+document.getElementById('importBtn').parentElement.appendChild(document.createElement('div'))
+document.getElementById('importBtn').parentElement.lastChild.outerHTML = '<div class="extended_no_imp_exp" style="padding: 25px;font-size: 18px;">This is senpa settings only, it wont grab any settings set in extended mod options, there will be extended import / export settings in future</div>'
 
 //▼▼ Setting up sleep function ▼▼
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
