@@ -359,7 +359,7 @@ ext_menu.appendChild(document.createElement('div'))
 ext_menu.appendChild(document.createElement('div'))
 ext_menu.appendChild(document.createElement('div'))
 ext_menu.children[0].outerHTML = '<div class="setting opt-colorpicker" id="menu_border_color"><div class="name">Menu border glow color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
-ext_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
+ext_menu.children[1].outerHTML = '<div class="setting opt-colorpicker" id="primary_color"><div class="name">Global primary color</div><div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="text minicolors-input" value="" size="7" placeholder="Hex Code"></div>'
 ext_menu.children[2].outerHTML = '<div class="setting opt-dropdown" id="senpa_logo_color"><div class="name">Logo color</div><div class="dropdown-box"><div class="selected">Pink</div><i class="fas fa-chevron-down"></i><div class="dropdown-list"></div></div></div>'
 var logo_color = document.getElementsByClassName("dropdown-list")[8]
 var logo = document.getElementsByClassName("selected")[8]
