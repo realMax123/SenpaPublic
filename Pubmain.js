@@ -208,7 +208,7 @@
 })();
 
 //▼▼ Removing useless shit / setting default values for mod / adding small details ▼▼
-const mod_version = '0.4.3'
+const mod_version = '0.4.5'
 document.getElementsByClassName("advertisement-informer")[0].remove();
 document.getElementsByClassName("partition right")[0].remove();
 document.getElementsByClassName("close-button")[0].remove();
@@ -282,12 +282,30 @@ async function ext_error(code, numb){
     else if (code == 35 && DB.innerHTML == 1) ( () => {console.log(console_data + 'Save clear console button position')} )();
     else if (code == 36 && DB.innerHTML == 1) ( () => {console.log(console_data + 'Get clear console button position')} )();
 }
-
-ext_error(1, mod_version);
+function get_toggle_hud(all){
+    var main = document.getElementById('huds')
+    if(main.children[1].style.display == 'none'){var a1 = 1}
+    if(main.children[2].style.display == 'none'){var a2 = 1}
+    if(main.children[3].style.display == 'none'){var a3 = 1}
+    if(main.children[4].style.display == 'none'){var a4 = 1}
+    if(main.children[5].style.display == 'none'){var a5 = 1}
+    if(main.children[6].style.display == 'none'){var a6 = 1}
+    if(main.children[7].style.display == 'none'){var a7 = 1}
+    if(a1 == 1 &&a2 == 1 &&a3 == 1 &&a4 == 1 &&a5 == 1 &&a6 == 1 &&a7 == 1){
+        var all = true; return all}  
+}
+function hide_all_hud(a){
+    if(a == 1){
+        document.getElementsByClassName('emoji_button')[0].style.display = 'none'
+    }else{
+        document.getElementsByClassName('emoji_button')[0].style.display = 'block'
+    }
+}
 //▼▼ Adding locked name info ▼▼
 document.getElementById('primary-inputs').appendChild(document.createElement('div'))
 document.getElementById('primary-inputs').children[2].outerHTML = '<div id="EXT-locked-name">Locked</div>'
 document.getElementById('EXT-locked-name').style.display = 'none'
+ext_error(1, mod_version);
 ext_error(17);
 
 //▼▼ Creating Extension tab in settings ▼▼
@@ -562,6 +580,12 @@ setInterval(async function() {
                 document.getElementById("chat-all-room").firstChild.remove()
             }
         }
+        if (get_toggle_hud() == true){
+            hide_all_hud(1)
+        }
+        else{
+            hide_all_hud(0)
+        }
         var end_game = document.getElementById("endGame")
         if(end_game.getAttribute('style').includes("block")) {
             document.getElementById("ad-button-continue").click()
@@ -570,7 +594,7 @@ setInterval(async function() {
             ext_error(21);
         }
     }catch (error) {}
-},100);
+},50);
 //▼▼ For thos who have extension roles and payed [VIP], remove vip ▼▼
 function checkVip(){
     try{
@@ -645,7 +669,7 @@ setInterval(function(){
         if (discordName == 'Veky#4504' && ingamename.value.includes('SukMyKuk'))            {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅷')){if (chat_box.value != ''){chat_box.value = '𝅷' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
     //Vip+ --
         if (discordName == 'yGlaive#0883' && ingamename.value.includes('Pthx'))             {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
-        if (discordName == 'conon5#3218' && ingamename.value.includes('乃卂几ᗪlㄒ'))          {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
+        if (discordName == 'conon5#3218' && ingamename.value.includes('乃卂几ᗪlㄒ'))         {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
         if (discordName == 'isabella#8718' && ingamename.value.includes('isabella'))        {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
         if (discordName == 'Ognjen#5945' && ingamename.value.includes('AppoX'))             {ext_error(30); specialUser = true; ExtLocked.style.display = 'block'; if (!chat_box.value.includes('𝅸')){if (chat_box.value != ''){chat_box.value = '𝅸' + chat_box.value}} return} else {ext_error(31); ExtLocked.style.display = 'none'; specialUser = false}
     } catch (error) {}
